@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<title></title>
+	</head>
+	<body>
+
+<h1>Etiquetas html</h1>
+<h2>Agrupacion de Contenidos</h2>
+<h3>Encabezados</h3>
+<p>h1, h2, h3, h4, h5 y h6</p>
+<hr>
+<h3>Parrafos</h3>
+<p>Incluira un salto de linea(al final) y espacio en blanco por encima y por debajo </p>
+<hr>
+<h3>Formatos de texto</h3>
+<h6>strong => Negrigta</h6>
+<h6>em => Cursiva</h6>
+<hr>
+<h3>Caracteres especiales</h3>
+<p><em>Con la etiqueta meta=UTF-8 ya nos interpretaria el codigo y no seria necesario acer la interpretacion de abajo.</em></p>
+<p>Caracteres que no pueden ser añadidos al documento de manera normal. Para que los interprete hay que escribirlos asi:</p>
+<p>&+letra+grave; => Acentro grave</p>
+<p>&+letra+cute; => Acento normal</p>
+<p>&+copy; => &copy;</p>
+<p>&+euro; => &euro;</p>
+<hr>
+<h3>Salto de linea y Espacios en Blanco</h3>
+<p> br => Salto de linea (no tiene etiqueta de cierre.)</p>
+<p> &+nbsp; => Espacio en blanco</p>
+<hr>
+<h3>Capas</h3>
+<p>Nos permite agrupar texto o cualquier elemento HTML. Las capas son bloques que pueden ser colocados en cualquier lugar de la pagina, ocultarse o solaparse entre si</p>
+<p>Se comporta como si fuera un bloque</p>
+<p> div= id='bloque1' </p>
+<hr>
+<h3>HiperEnlaces</h3>
+<p>Debemos dar un nombre al ancla(destino) <mark>(documento02)=> a name="ancla01"</mark>  y luego llamarla desde el ancla(origen) <mark>(documento01) => a href="documento02.html<strong>#ancla01</strong>"</mark></p>
+<p>Si el ancla esta EN EL MISMO DOCUMENTO <mark>a href="#ancla01</mark> Solo referenciamos el nombre del ancla pero no el del documento</p>
+<p>permite que al hacer clic sobre un texto, imagen, video, o cualquier elemento nos redirija a otra zona del documento HTML, a otro HTML o a un archivo.</p>
+<p>Con el atributo href definimos el destino del enlace o url de destino (Hay que añadir la ruta completa)</p>
+<h3>Tipos de Referencia</h3>
+<p>Absoluta => Direccion Completa http://www.nombrepagina.com/carpeta/archivo.html</p>
+<p>Relativa => Desde donde nos encontramos(suponiendo que estamos en www.nombrepagina.com) ./carpeta/archivo.html </p>
+<h3>Destino</h3>
+<p>Podemos elegir la apertura de ventana</p>
+<h5>Se emplean con el atributo target  a href="http://www.pagina.com" <strong>target="_blank"</strong></h5>
+<p>_blank => Ventana Nueva</p>
+<p>_self => Misma Ventana</p>
+<p>_parent => Ventana Padre</p>
+<p>_tos => Ventana Completa</p>
+<h3>Otros Enlaces</h3>
+<p>mailto => Correo Electronico <mark>a href="mailto: direccion@deCorreo.com</mark></p>
+<p>documento.doc => Documentos <mark>a href="documento.doc" </mark></p>
+<hr>
+<h3>LISTAS</h3>
+<p>ul => Desordenadas </p>
+<p>ol => Ordenadas</p>
+<p>li => Definimos elementos dentro de las listas</p>
+<h4>Podemos anidar listas</h4>
+<p><pre>
+	
+</pre></p>
+<hr>
+<h3>IMAGENES<small>no tiene eqtiqueta de cierre</small></h3>
+<h4>Tipos</h4>
+<ul>
+	<li>GIF => Pequeña, Poca Definicion y Transparencia</li>
+	<li> JPG => Grandes, Poca Resolucion NO Transparentes</li>
+	<li> PNG => Muy Grandes, Mucha Definicion y Transparente</li>
+</ul>
+<p> img src="direccionImagen" => Direccion de la imagen</p>
+<p> img alt="textoAlternativo" => Texto por si no se ve la imagen</p>
+<p> img width="400px" =>(Ancho) height="400px"  =>(Alto) Podemos darle un valor de porcentaje(% del tamaño original) en vez de px </p>
+<hr>
+<h3>Videos</h3>
+<p>Para un solo video(se indica la direccion en src y los atributos necesarios</p>
+<code>&lt; video src"direccion/archivo.mp4" atributos &gt; &lt;/video&gt;</code>
+<p>Atributos:</p>
+<ul>
+	<li>src = indica la ruta donde se encuentra el vide o a insertar</li>
+	<li>controls = incorpora controles tipicos (reproducir,pantalla completa...)</li>
+	<li>width = ancho del video</li>
+	<li>height= alto del video</li>
+	<li>loop = reproduce continuamente el video en modo bucle</li>
+	<li>poster="direccionImagen" => muestra una imagen previa a la reproduccion del video</li>
+	<li>autoplay = fuerza la reproduccion del video cuando le sea posible al navegador</li>
+	<li>preload = gestiona la cache, pudiendo tomar los siguientes valores:
+		<ol>
+			<li>auto : sugiere la descarga del archivo cuanto antes (valor por defecto).</li>
+			<li>none: indica que el vídeo no debería ser cacheado, por lo general con el propósito de minimizar tráfico innecesario.</li>
+			<li>metadata: indica al navegador que trate de obtener información sobre la fuente (dimensiones, duración, primer cuadro…)</li>
+		</ol>
+	</li>
+</ul>
+<p>Varios videos:</p>
+<p>Sustituimos la etiqueta src por source src(para cada video) entre las etiquetas de apertura y cierre de video</p>
+<p><pre>
+&lt;video whidth="400" controls autoplay loop poster="direccion/archivo.jpg"&gt;
+	&lt;source src="direccion/archivoVideo.jpg"&gt;
+	&lt;source src="direccion/archivoVideo2.jpg"&gt;
+&lt;/video&gt;
+</pre></p>
+<p>En caso de que los videos esten almacenados en internet creamos un iframe src="direccionCompleta" whidth="anchura" height="altura" id="id que youtube o la pagina de videos aya asignado al video"</p>
+<p>Recuerda sustituir la etiqueta watch de la direccion de youtube por embed</p>
+<p><code>&lt;iframe src="https://www.youtube.com/embed/nPIPHV26awI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</code></p>
+<p>(1=activo 0=no activo)Podemos añadir los atributos  ?autoplay=1 ?loop=1 y ?controls=0 justo despues de indicar el id del video</p>
+<p><code> src="https://www.youtube.com/embed/467a8x78954?autoplay=1?loop=0?controls=1"</code></p>
+<p>Tambien podemos pulsar sobre el video con boton derecho, estadisticas para nerds y  hacemos clic derecho dentro copiar codigo de insercion (recuerda eliminar altura y anchura por defecto)</p>
+<hr>
+<h3>Audio</h3>
+<p>Seria igual que para los videos pero en vez de usar la etiqueta video usamos la etiqueta media</p>
+<hr>
+<h3>TABLAS</h3>
+<p>Permite la representacion mediante filas(tr) , columnas(col) y celdas(td)</p>
+<ul>
+	<li>fila (tr)</li>
+	<li>encabezadoColumna (th) => Centrado y en negrita</li>
+	<li>columna-celda (td => Tendremos un td por cada celda de cada fila)</li>
+</ul>
+<p>Atributos</p>
+<p>Tener en cuenta que si expandimos debemos borrar el numero de celdas o filas expandidas de la estructura original de la tabla</p>
+<ul>
+	<li>colspan => Expandir Columnas</li>
+	<li>rowspan => Expandir Filas</li>
+</ul>
+<p>table cellpading="3" collspacing="0" border="1"</p>
+<ul>
+	<li>border => Borde</li>
+	<li>width => Ancho</li>
+	<li>height => Alto</li>
+	<li>cellspacing => Espacio entre celdas</li>
+	<li>cellpading => Espacio entre borde de celda y contenido</li>
+	<li>align => Alineacion Horizontal
+		<ul>
+		<li>left => Izquierda</li>
+		<li>right => Derecha</li>
+		<li>center => Centrada</li>
+	</ul>
+	</li>
+	
+	<li>bgcolor => color de fondo</li>
+	<li>bordercolor => color de borde</li>
+	<li>background => Imagen de fondo</li>
+</ul>
+<h4>Titulo de Tablas</h4>
+<p>Etiqueta caption</p>
+<p>
+	<pre>
+		&lt;table cellpading="3" border="2"&gt;
+			&lt;caption&gt;Titulo de la tabla&lt;/caption&gt;
+		&lt;/table&gt;
+	</pre>
+</p>
+<hr>
+<h3>FORMULARIOS</h3>
+<p><code>&lt;form&gt;</code></p>
+<p>Propiedades:</p>
+<ul>
+	<li>method="" => Metodo de envio, por defecto POST</li>
+	<li>action="" => Pagina a la que me dirige o direccion de la pagina</li>
+	<li>name="" => Nombre del formulario</li>
+</ul>
+<h4>Etiquetas:</h4>
+<p>Input</p>
+<p><code>&lt;input type="text" name="texto1" maxlength="10" value="Nombre_Usuario"&gt;</code></p>
+<ul>
+	<li>name => nombre del elemento</li>
+	<li>type => Tipo de elemento
+		<ul>
+			<li>text => texto (propiedades: name=> nombre, maxlenght => nº max de caracteres, size=> tamaño del campo</li>
+			<li>password => contraseña (propiedades: name=> nombre, maxlenght => nº max de caracteres, size=> tamaño del campo</li>
+			<li>hidden => dato oculto (propiedades name(nombre) maxlength(max caracteres)</li>
+			<li>radio => radio buton (propiedades: name(nombre) value(valor))</li>
+			<li>checkbox => checkbox (propiedades: name(nombre) value(valor))</li>
+			<li>button =>boton (propiedades: name(nombre) value(valor))</li>
+			<li>submit =>botonEnvio (propiedades: name(nombre) value(valor))</li>
+			<li>reset => borra valores (propiedades: name(nombre) value(valor))</li>
+		</ul>
+	</li>
+</ul>
+<br>
+<p>Select</p>
+<p>
+	<pre>
+		&lt;form method="post" action="pagina.php"&gt;
+			&lt;select name="caballos" &gt;
+				&lt;option&gt;60 caballos&lt;/option&gt;
+				&lt;option&gt;10 caballos&lt;/option&gt;
+				&lt;option&gt;115 caballos&lt;/option&gt;
+				&lt;option&gt;200 caballos&lt;/option&gt;
+			&lt;/select&gt;
+		&lt;/form&gt;
+	</pre>
+</p>
+<p>Atributos:</p>
+<ul>
+	<li>option => contiene los valores del select</li>
+	<li>size => numero de elementos que muestra</li>
+	<li>multiple => permite seleccionar mas de un valor de la lista</li>
+</ul>
+<p>Text Area</p>
+<p>
+	<pre>
+		&lt;form method="post" action="pagina.php"&gt;
+			&lt;h3&gt;Escribe un comentario de tu peli favorita&lt;/h3&gt;
+			&lt;textarea name="comentario" cols="50" rows="5"&gt;aqui comienza el comentario...&lt;/textarea&gt;
+		&lt;/form&gt;
+	</pre>
+</p>
+<p>propiedades:</p>
+<ul>
+	<li>cols => nº de columnas del area de texto</li>
+	<li>rows => nº de filas </li>
+	<li>name => nombre del select</li>
+</ul>
+<h3>Atributo REQUIRED</h3>
+<p>Campos rellenos obligatoriamente al pulsar el boton submit</p>
+<p>Es necesario añadir etiqueta meta <code>&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8"/&gt;</code></p>
+<h3>ETIQUETAS META</h3>
+<p><code>&lt;!DOCTYPE html&gt; &lt;/html&gt;</code></p>
+<p><code>&lt;meta name="author" =>(indica el autor de la pagina) content="Cursos Web" =>contenido de la pagina</code></p>
+<p><code>&lt;meta name="description" =>(descripcion del contenido de la pagina "Usado por los buscadores") content="Cursos Web" =>contenido de la pagina</code></p>
+<p><code>&lt;meta name="keywords" =>(Conjunto de palabras mas relevantes "Usado por el buscador") content="Cursos Web" =>contenido de la pagina</code></p>
+<p><code>&lt;meta charset="UTF-8" =>especifica como sera presentado el texto en pantalla evitando problemas de visualizacion por los caracteres latinos(tambien podemos usar la etiqueta utilizada para el required)</code></p>
+<hr>
+<h1>HTML5</h1>
+<p>Estructura del cuerpo</p>
+<ul>
+	<li>header => Cabecera</li>
+	<li>nav => Barra Navegacio</li>
+	<li>section
+		<ul>
+			<li>article
+				<ul>
+					<li>header(podemos agrupar las etiquetas h1,h2.. en un hgroup)</li>
+					<li>cuerpo(sin etiqueta iria suelto entre header y footer)</li>
+					<li>footer</li>
+				</ul>
+			</li>
+			<li>article</li>
+			<li>article</li>
+		</ul>
+	</li>
+	<li>aside => barra lateral</li>
+	<li>footer => pie de pagina</li>
+</ul>
+<p>Podemos utilizar la etuiqeta figure dentro del section para indicar contenido independiente(fotos,videos...) y con figcaption(dentdo de etiqueta figure) podemos indicar un texto como pie de foto</p>
+<hr>
+<h3>MARCADORES DE TEXTO</h3>
+<p><mark>mark</mark></p>
+<p><small>small</small></p>
+<p><cite>cita</cite></p>
+<p><address>address</address></p>
+<p><time>time</time></p>
+<p><strong>strong</strong></p>
+<p><em>em</em></p>
+<p>hr</p>
+<p>bloquote => creamos citas Puede contener h1 p footer...(es similar a un parrafo pero tabulado y contenedor de otras etiquetas</p>
+<hr>
+<h3>TABLAS</h3>
+<p>Podemos distinguir entre thead => Cabecera,  tbody=>Cuerpo,  tfoot=> pie</p>
+<hr>
+<h3>Imagenes</h3>
+<p>Nuevos Atributos:</p>
+<p>alt="paisaje" => usado por google para reconocer la imagen y catalogarla</p>
+<p>title="paisajeSierraEspuña" => info al situar raton sobre la imagen</p>
+<hr>
+<h3>Marcas de bloque</h3>
+<p> div => define un bloque de texto recuadrado en una posicion determinada y con un tamaño exacto y unas tipografias. Todo ello especificado en los estilos css</p>
+<p>span => definir estilo propio de un texto dentro de un parrafo</p>
+<hr>
+<h3>Separadores</h3>
+<p>br => salto de linea</p>
+<p>hr => salto de linea con una ralla</p>
+<hr>
+<h3>iFrames</h3>
+<p>Incluir una pagina web dentro de otra</p>
+<p>Atributos:</p>
+<ul>
+	<li>src => direccion de la web que queremos mostrar</li>
+	<li> whidth => anchura del iframe</li>
+	<li>height => altura del iframe</li>
+	<li>frameborder="0"(sin borde) o "1"(con borde) =>Indica si queremos bordes o no </li>
+	<li>scroll="yes" "no" "auto" =>Si queremos scroll o no  </li>
+</ul>
+<p>Estructura de html5</p>
+<p><pre>
+&lt;!DOCTYPE html&gt;
+	&lt;html lang="es"&gt;
+	&lt;head&gt;
+		&lt;meta charset="UTF-8"&gt;
+		&lt;meta name="keywords" content=""&gt;
+		&lt;meta name="description" content=""&gt;
+		&lt;link href="./estilos.css" rel="stylesheet" type="text/css"&gt;
+		&lt;title&gt;&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;header&gt;
+		
+		&lt;/header&gt;
+		
+		&lt;nav&gt;
+		
+		&lt;/nav&gt;
+		
+		&lt;section&gt;
+		
+		&lt;/section&gt;
+		
+		&lt;aside&gt;
+		
+		&lt;/aside&gt;
+		
+		&lt;footer&gt;
+		
+		&lt;/footer&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</pre></p>
+
+	</body>
+</html>

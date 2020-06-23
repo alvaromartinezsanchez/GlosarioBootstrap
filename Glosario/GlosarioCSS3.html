@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<title></title>
+	</head>
+	<body>
+	<h3>Prefijos para Navegadores:</h3>
+	<ul>
+		<li>-moz: Mozilla</li>
+		<li>-webkit-: Safari y Chrome</li>
+		<li>-o-: Prefijo para Opera.</li>
+		<li>-khtml-: Prefijo para Konqueror.</li>
+		<li>-ms-: Prefijo para Internet Explorer.</li>
+		<li>-chrome-: Prefijo para Chrome.</li>
+	</ul>
+	<hr>
+	<h3>Referenciar Elementos</h3>
+	<h4>Selector por atributo</h4>
+	<p>Permiten seleccionar elemento HTML en función de sus atributos y/o
+	valores de esos atributos.</p>
+	<p><pre>
+		/*Elemento referenciado por atributo*/
+		td[name="ascenso"]{ <-- Celdas cullo name=ascenso
+			background-color:#ec4012;
+			font-weight:bold;
+		}
+		td[ name ]{ <-- Celdas que tengan name
+			background-color:#ec4012;
+			font-weight:bold;
+		}
+	</pre></p>
+	<h4>Selector de hijos</h4>
+	<p>Se utiliza para seleccionar un elemento que es hijo directo de otro
+	elemento y se indica mediante el signo “mayor que” (>).</p>
+	<p><pre>
+		/*Hijo directo solo afecta a los <a> que hay justo despues de un td*/
+		td > a{
+			font-weight:bold;
+			color:#19a40f;/*verde*/
+		}
+	</pre></p>
+	<h4>Selectores adyacentes:</h4>
+	<p>Se emplea para seleccionar elementos que en el código HTML de la
+	página se encuentran justo a continuación de otros elementos. Su sintaxis emplea el signo +
+	para separar los dos elementos.</p>
+	<p>
+		<pre>
+			/*Selector adyacente*/
+			td + td {
+				background-color:#4d2612;/*solo afecta a las celdas que delante tengan otra celda*/
+			}
+		</pre>
+	</p>
+	<h4>Atributos:</h4>
+	<ul>
+		<li>border-radius: Define el radio del borde en un elemento. <pre>
+			-moz-border-radius: 20px 0px;/*compatibilidad con firefox*/
+			-webkit-border-radius: 20px 0px;/*compativilidad con chrome o con safari*/
+			border-radius: 20px 0px;/* estandar para todos los navegadores*/</pre></li>
+
+		<li>box-shadow: Define la sobra en el borde de un elemento. <pre>
+			-moz-box-shadow: 4px 4px 5px rgba(168,108,53,0.5);/*los dos  primero valores(4px 4px) es la cardinalidad, el tercer valor la difuminacion de las sombras(5px) y el 4 la transparencia*/
+			-webkit-box-shadow: 4px 4px 5px rgba(168,108,53,0.5);
+			box-shadow: 0px 0px 20px rgba(168,108,200,1.5)/*<--sombra externa,sombra interna-->*/,0px 0px 18px rgba(0,0,0,0.9)inset;/*con "inset" la sombra la pone dentro del objeto*/</pre></li>
+		
+		<li>rgba(): Define el color en RGB con variante alfa, que indica transparencia. <pre>
+			rgba(168,108,200,1.5)/*<--sombra externa,sombra interna-->*/,0px 0px 18px rgba(0,0,0,0.9)inset;/*con "inset" la sombra la pone dentro del objeto*/
+		</pre></li>
+		
+		<li>linear-gradient: Define un degradado lineal. (top,bottom,left,right)<pre>
+			background:-moz-linear-gradient(left, #a96c35, #4d2612);
+			background:-webkit-linear-gradient(left, #a96c35, #4d2612);</pre></li>
+		<li>radial-gradient: Degradado circular <code>background: radial-gradient(center, circle, #FFFFFF 0%, #006699 200%);</code></li>
+		
+		<li>@font-face: Incorpora una determinada fuente a la hoja de estilos. <pre>
+			#titulo{
+				text-shadow: 3px 3px 5px rgba(40,50,90,3.5),6px 6px 8px rgba(10,150,20,0.9);
+				font: bold 46px FuenteNueva;
+			}
+			
+			@font-face {
+				font-family: 'FuenteNueva';
+				src: url('../fuentes/Garden.ttf');
+			}
+		</pre> En el ejemplo, hemos asignado el nombre de “MiNuevaFuente” a nuestro nuevo tipo de letra, y
+			mediante la instrucción “src” le indicamos dónde se encuentra el archivo “.ttf” (en nuestro caso, descarado
+			de la web www.dafont.com/es/) que se vincula a ese nombre de fuente (se recomienda crear una nueva
+			carpeta ‘fuentes’ donde guardar los archivos “.ttf”). A continuación, especificamos que el título será
+			visualizado empleando la nueva fuente o las alternativas “verdana” y “sans-serif” en caso de que la nueva
+			fuente incorporada no sea cargada correctamente.</li>
+		<h4>Transformaciones:</h4>
+		<li>transform: Permite la transformación de un objeto suele indicarse en un efecto hover(al poner el raton encima).</li>
+		<li>transform:scale: Realiza una transformación de escala. La función “scale” aumenta o disminuye el tamaño de un elemento, siendo el punto de referencia el valor 1, es
+		decir, aquellos valores superiores a 1 harán que el elemento aumente de tamaño, con una relación porcentual, y
+		aquellos valores menores que 1 harán que disminuya de tamaño. <pre>
+			/*!!!!!siempre ejecuta el ultimo que pongamos a no ser que usemos el transition que esta mas abajo!!!!!!*/
+			/*aumentar o reducir*/
+			/*
+			-moz-transform:scale(1.5);/*podemos afectar a todo o a eje-x y eje-y
+			-webkit-transform:scaleX(0.5) scaleY(2);
+			
+			Mediante el uso de las funciones “scaleX” y “scaleY” se podría conseguir que el elemento únicamente modificara
+			su tamaño en un eje.
+		</pre></li>
+		<li>transform:rotate: Realiza una transformación de giro. gira un elemento desde un punto fijo. Si el valor del ángulo es positivo, lo hará en
+		sentido de las agujas del reloj. En nuestro caso hemos aplicado una rotación de 10 grados sobre la imagen. <pre>
+			/*rotar
+			-moz-transform:rotate(10deg);
+			-webkit-transform:rotate(10deg);
+		</pre></li>
+		<li>transform:translate: Realiza una transformación de cambio de posición. desplaza los objetos, siendo el punto de partida la esquina superior izquierda.<pre>
+			/*trasladar
+			-moz-transform:translateX(100px) translateY(50px);/*podemos referenciar el eje x o y para indicarle la posicion a la que se mueve
+			-webkit-transform:translate(-150px);/*solo coje el eje x*/
+		</pre></li>
+		<li>transform:skew: Realiza una transformación de distorsión.</li>
+		<li>transition: Modifica parámetros como son el orden y velocidad de las transiciones, creando
+		una trayectoria.que permite que un efecto tenga una duración temporal, es decir, que
+		no sea instantáneo y podamos apreciar el movimiento. A dicha instrucción se le pasan 4 parámetros. Un
+		primer parámetro es el nombre de la propiedad a la que se le aplica la transición; un segundo parámetro es
+		la duración; el tercer parámetro indica el modelo matemático que aplica a la transición (según la fórmula
+		de Bezier, puede ser: ease(acelera al principio frena al final), linear(constante), ease-in, ease-out o ease-in-out(acelera la principio y al final constante en el medio)); y el cuarto parámetro indica el retardo
+		en comenzar la transición. <pre>
+			/*TRANSLACION para unir varios efectos*/
+			-moz-transform:rotate(120deg) scale(3);
+			-webkit-transform:translate(120px) rotate(360deg) scale(2);
+			
+			/*UNA VEZ CREADA LA TRANSFORMACION CON VARIOS EFECTOS ACEMOS LA TRANSICION*/
+			-moz-transition: -moz-transform 1s ease-in-out 0.5s;/* Necesita 4 datos(Nombre de la transformacion,duracion,modelo matematico,retardo)*/
+			-webkit-transition:-webkit-transform 3s ease 0.5s;
+		</pre></li>
+	</ul>
+
+	</body>
+</html>

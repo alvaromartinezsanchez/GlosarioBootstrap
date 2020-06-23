@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link type="text/css" rel="stylesheet" href="./css/bootstrap.min.css">
+	<style>
+        body{
+            margin: 10px 50px;
+        }
+        h4 { color: blue; }
+        h5{ color: rgba(8, 189, 235, 0.692);}
+        strong{ color: rgba(115, 165, 19, 0.747); }
+        .clase{color: crimson;}
+        .barra{
+    		margin-bottom: 50px;
+    	}
+    </style>
+<body>
+    <div class="row barra" > 
+    <div class="col">
+        <!--Enlaces-->
+    <nav class="navbar fixed-top navbar-expand-sm bg-dark ">
+        <!--Enlaces-->
+        <ul class="navbar-nav nav-fill">
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="navbardorp" data-toggle="dropdown">Gird</a>
+                <div class="dropdown-menu">
+                    <a href="GlosarioGird.html#Tama" class="dropdown-item nav-link">Tamaños</a>
+                    <a href="GlosarioGird.html#Alineacion" class="dropdown-item nav-link">Alineacion</a>
+                    <a href="GlosarioGird.html#Otros" class="dropdown-item nav-link">Otros</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="navbardorp" data-toggle="dropdown">Tipografia</a>
+                <div class="dropdown-menu">
+                    <a href="GlosarioTipografia.html#Encabezados" class="dropdown-item nav-link">Encabezados</a>
+                    <a href="GlosarioTipografia.html#Alineacion" class="dropdown-item nav-link">Alineacion</a>
+                    <a href="GlosarioTipografia.html#Conversiones" class="dropdown-item nav-link">Conversiones</a>
+                    <a href="GlosarioTipografia.html#Blockquote" class="dropdown-item nav-link">Blockquote</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="navbardorp" data-toggle="dropdown">Componentes 1</a>
+                <div class="dropdown-menu">
+                    <a href="GlosarioComponentes1.html#Imagenes" class="dropdown-item nav-link">Imagenes</a>
+                    <a href="GlosarioComponentes1.html#Tablas" class="dropdown-item nav-link">Tablas</a>
+                    <a href="GlosarioComponentes1.html#BloquesCodigo" class="dropdown-item nav-link">Bloques Codigo</a>
+                    <a href="GlosarioComponentes1.html#MediaObjet" class="dropdown-item nav-link">Media Objet</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="navbardorp" data-toggle="dropdown">Componentes2</a>
+                <div class="dropdown-menu">
+                    <a href="GlosarioComponentes3.html#Alertas" class="dropdown-item nav-link">Alertas</a>
+                    <a href="GlosarioComponentes3.html#Insignias" class="dropdown-item nav-link">Insignias</a>
+                    <a href="GlosarioComponentes3.html#Cards" class="dropdown-item nav-link">Cards</a>
+                    <a href="GlosarioComponentes3.html#CardsExtras" class="dropdown-item nav-link">CardEsxtras</a>
+                    <a href="GlosarioComponentes3.html#CardsGrupos" class="dropdown-item nav-link">CardsGrupos</a>
+                    <a href="GlosarioComponentes3.html#Collapse" class="dropdown-item nav-link">Collapse</a>
+                    <a href="GlosarioComponentes3.html#Acordeon" class="dropdown-item nav-link">Acordeon</a>
+                    <a href="GlosarioComponentes3.html#Modal" class="dropdown-item nav-link">Modal</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="navbardorp" data-toggle="dropdown">Botones</a>
+                <div class="dropdown-menu">
+                    <a href="GlosarioBotones.html#Estilos" class="dropdown-item nav-link">Estilos</a>
+                    <a href="GlosarioBotones.html#GruposBotones" class="dropdown-item nav-link">GruposBotones</a>
+                    <a href="GlosarioBotones.html#Checkbox" class="dropdown-item nav-link">Checkbox</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="navbardorp" data-toggle="dropdown">Desplegables</a>
+                <div class="dropdown-menu">
+                    <a href="GlosarioDesplegables.html#Desplegables" class="dropdown-item nav-link">Desplegables</a>
+                    <a href="GlosarioDesplegables.html#Alineacion" class="dropdown-item nav-link">Alineacion</a>
+                    <a href="GlosarioDesplegables.html#GruposBotones" class="dropdown-item nav-link">GruposBotones</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="navbardorp" data-toggle="dropdown">Formularios</a>
+                <div class="dropdown-menu">
+                    <a href="GlosarioFormulario.html#Estructura" class="dropdown-item nav-link">Estructura</a>
+                    <a href="GlosarioFormulario.html#EnLinea" class="dropdown-item nav-link">EnLinea</a>
+                    <a href="GlosarioFormulario.html#Horizontal" class="dropdown-item nav-link">Horizontal</a>
+                    <a href="GlosarioFormulario.html#CuadrosAyuda" class="dropdown-item nav-link">CuadrosAyuda</a>
+                    <a href="GlosarioFormulario.html#Validacion" class="dropdown-item nav-link">Validacion</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="navbardorp" data-toggle="dropdown">Input</a>
+                <div class="dropdown-menu">
+                    <a href="GlosarioInput.html#Texto" class="dropdown-item nav-link">Texto</a>
+                    <a href="GlosarioInput.html#Select" class="dropdown-item nav-link">Select</a>
+                    <a href="GlosarioInput.html#RadioButton" class="dropdown-item nav-link">RadioButton</a>
+                    <a href="GlosarioInput.html#Checkbox" class="dropdown-item nav-link">Checkbox</a>
+                    <a href="GlosarioInput.html#Tamaños" class="dropdown-item nav-link">Tamaños</a>
+                    <a href="GlosarioInput.html#Agrupaciones" class="dropdown-item nav-link">Agrupaciones</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="navbardorp" data-toggle="dropdown">Navegacion</a>
+                <div class="dropdown-menu">
+                    <a href="GlosarioNavegacion.html#MenuBasico" class="dropdown-item nav-link">MenuBasico</a>
+                    <a href="GlosarioNavegacion.html#Pestañas" class="dropdown-item nav-link">Pestañas</a>
+                    <a href="GlosarioNavegacion.html#Boton" class="dropdown-item nav-link">Boton</a>
+                    <a href="GlosarioNavegacion.html#Justificado" class="dropdown-item nav-link">Justificado</a>
+                    <a href="GlosarioNavegacion.html#Desplegable" class="dropdown-item nav-link">Desplegable</a>
+                    <a href="GlosarioNavegacion.html#Dinamicos" class="dropdown-item nav-link">Dinamicos</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="navbardorp" data-toggle="dropdown">BarraNavegacion</a>
+                <div class="dropdown-menu">
+                    <a href="GlosarioNavegacion.html#BarraNavegacion" class="dropdown-item nav-link">BarraNavegacion</a>
+                    <a href="GlosarioNavegacion.html#Color" class="dropdown-item nav-link">Color</a>
+                    <a href="GlosarioNavegacion.html#Logotipo" class="dropdown-item nav-link">Logotipo</a>
+                    <a href="GlosarioNavegacion.html#Desplegable" class="dropdown-item nav-link">Desplegable</a>
+                    <a href="GlosarioNavegacion.html#Formulario" class="dropdown-item nav-link">Formulario</a>
+                    <a href="GlosarioNavegacion.html#Plegable" class="dropdown-item nav-link">Plegable</a>
+                    <a href="GlosarioNavegacion.html#Anclaje" class="dropdown-item nav-link">Anclaje</a>
+                    <a href="GlosarioNavegacion.html#Contenedores" class="dropdown-item nav-link">Contenedores</a>
+                </div>
+            </li>
+			<li class="nav-item dropdown">
+				<a href="#" class="nav-link dropdown-toggle" id="navbardorp" data-toggle="dropdown">Html/Css</a>
+				<div class="dropdown-menu">
+					<a href="GlosarioHTML.html" class="dropdown-item nav-link">Html</a>
+					<a href="GlosarioCSS.html" class="dropdown-item nav-link">Css</a>
+					<a href="GlosarioCSS3.html" class="dropdown-item nav-link">Css3</a>
+				</div>
+			</li>
+                    
+        </ul>
+    </nav>
+    </div>
+</div>
+	<h4>Menu Horizontal Basico</h4>
+	<div id="MenuBasico"></div>
+	<p>Para crear un menú horizontal simple, añadimos la clase .nav a un elemento &lt;ul>, seguido de la clase .nav-item para cada &lt;li> y añadiendo la clase .nav-link a sus enlaces</p>
+	<p>Cada elemento del menú será un .nav-item, los cuales contienen un enlace tipo .nav-link a la sección a mostrar. Disponemos de la clase .disabled para deshabilitar elementos del menú, y de la clase .active para marcar el elemento del menú que está activo o seleccionado.</p>
+	<h6>Menu horizontal basico</h6>
+				<!-- podriamos alinearlo a la derecha con justify-content-end o centrado justify-content-center 
+					Se aplicaria a la clase nav de ul-->
+				<ul class="nav">
+					<li class="nav-item">
+						<a href="#" class="nav-link">Inicio</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">Blog</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">Contacto</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link disabled">Proximamente</a>
+					</li>
+				</ul>
+	<p><pre>
+&lt;h3&gt;Menu horizontal basico&lt;/h3&gt;
+&lt;!-- podriamos alinearlo a la derecha con justify-content-end o centrado justify-content-center 
+	Se aplicaria a la clase nav de ul--&gt;
+&lt;ul class="nav"&gt;
+	&lt;li class="nav-item"&gt;
+		&lt;a href="#" class="nav-link"&gt;Inicio&lt;/a&gt;
+	&lt;/li&gt;
+	&lt;li class="nav-item"&gt;
+		&lt;a href="#" class="nav-link"&gt;Blog&lt;/a&gt;
+	&lt;/li&gt;
+	&lt;li class="nav-item"&gt;
+		&lt;a href="#" class="nav-link"&gt;Contacto&lt;/a&gt;
+	&lt;/li&gt;
+	&lt;li class="nav-item"&gt;
+		&lt;a href="#" class="nav-link disabled"&gt;Proximamente&lt;/a&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+	</pre></p>
+	<h4>Menu Vertical Basico</h4>
+	<p></p>
+	<h6>Menu vertical basico</h6>
+				<!-- podriamos alinearlo a la derecha con justify-content-end o centrado justify-content-center 
+					Se aplicaria a la clase nav de ul-->
+					<!--Para hacerlo vertical añadimos flex column a la clase nav de ul-->
+				<ul class="nav flex-column">
+					<li class="nav-item">
+						<a href="#" class="nav-link active">Inicio</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">Blog</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link">Contacto</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link disabled">Proximamente</a>
+					</li>
+				</ul>
+	<p>Para crear un menú vertical, añadimos la clase .flex-column</p>
+	<p><pre>
+&lt;h3&gt;Menu horizontal basico&lt;/h3&gt;
+&lt;!-- podriamos alinearlo a la derecha con justify-content-end o centrado justify-content-center 
+	Se aplicaria a la clase nav de ul--&gt;
+&lt;ul class="nav flex-column"&gt;
+	&lt;li class="nav-item"&gt;
+		&lt;a href="#" class="nav-link"&gt;Inicio&lt;/a&gt;
+	&lt;/li&gt;
+	&lt;li class="nav-item"&gt;
+		&lt;a href="#" class="nav-link"&gt;Blog&lt;/a&gt;
+	&lt;/li&gt;
+	&lt;li class="nav-item"&gt;
+		&lt;a href="#" class="nav-link"&gt;Contacto&lt;/a&gt;
+	&lt;/li&gt;
+	&lt;li class="nav-item"&gt;
+		&lt;a href="#" class="nav-link disabled"&gt;Proximamente&lt;/a&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+	</pre></p>
+	<div id="Pestañas"></div>
+	<h4>Menu Formato Pestañas (tabs)</h4>
+	<p>Podemos convertir el menú de navegación en pestañas de navegación con la clase .nav-tabs</p>
+	<h6>Menu Formato Pestaña</h6>
+				<!--nav-tabs le da una apariencia de pestaña a los enlaces-->
+				<!-- Hay que añadir el atributo active a cada enlace a para que muestre con forma de pesataña-->
+				<ul class="nav nav-tabs">
+					<li class="nav-item">
+						<a href="#" class="nav-link active">Inicio</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link active">Blog</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link active">Contacto</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link disabled">Proximamente</a>
+					</li>
+				</ul>
+	<p><pre>
+&lt;h3&gt;Menu Formato Pestaña&lt;/h3&gt;
+&lt;!--nav-tabs le da una apariencia de pestaña a los enlaces--&gt;
+&lt;!-- Hay que añadir el atributo active a cada enlace a para que muestre con forma de pesataña--&gt;
+&lt;ul class="nav nav-tabs"&gt;
+	&lt;li class="nav-item"&gt;
+		&lt;a href="#" class="nav-link active"&gt;Inicio&lt;/a&gt;
+	&lt;/li&gt;
+	&lt;li class="nav-item"&gt;
+		&lt;a href="#" class="nav-link active"&gt;Blog&lt;/a&gt;
+	&lt;/li&gt;
+	&lt;li class="nav-item"&gt;
+		&lt;a href="#" class="nav-link active"&gt;Contacto&lt;/a&gt;
+	&lt;/li&gt;
+	&lt;li class="nav-item"&gt;
+		&lt;a href="#" class="nav-link disabled"&gt;Proximamente&lt;/a&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+	</pre></p>
+	<div id="Boton"></div>
+	<h4>Menu Formato Boton(Pills)</h4>
+	<p>La  clase .nav-pills  se  define  de  igual  forma  que  la  clase .nav-tab,  pero  sus elementosadoptarán una apariencia más similar a botones o “píldoras”</p>
+	<h6>Menu Formato Pildora</h6>
+				<!--nav-pill le da una apariencia de boton a los enlaces añadimos a cada enlace el atributo active para que se vea el boton-->
+				<ul class="nav nav-pills">
+					<li class="nav-item">
+						<a href="#" class="nav-link active">Inicio</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link active">Blog</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link active">Contacto</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link disabled">Proximamente</a>
+					</li>
+				</ul>
+	<p><pre>
+&lt;h3&gt;Menu Formato Pildora&lt;/h3&gt;
+&lt;!--nav-pill le da una apariencia de boton a los enlaces añadimos a cada enlace el atributo active para que se vea el boton--&gt;
+&lt;ul class="nav nav-pills"&gt;
+	&lt;li class="nav-item"&gt;
+		&lt;a href="#" class="nav-link active"&gt;Inicio&lt;/a&gt;
+	&lt;/li&gt;
+	&lt;li class="nav-item"&gt;
+		&lt;a href="#" class="nav-link active"&gt;Blog&lt;/a&gt;
+	&lt;/li&gt;
+	&lt;li class="nav-item"&gt;
+		&lt;a href="#" class="nav-link active"&gt;Contacto&lt;/a&gt;
+	&lt;/li&gt;
+	&lt;li class="nav-item"&gt;
+		&lt;a href="#" class="nav-link disabled"&gt;Proximamente&lt;/a&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+	</pre></p>
+	<div id="Justificado"></div>
+	<h4>Ancho Justificado (nav-fill)</h4>
+	<p>Ta m b i é n  podemos  indicar  que  el    ancho  de  las  pestañas  o  de  las  píldoras  se  distribuyaequitativamente  según  el    ancho  disponible.  Para  esto  simplemente tenemos  que  aplicar  la  clase .nav-fill a la etiqueta contenedora</p>
+	<h6>Ancho Justificado</h6>
+				<!--nav-pill le da una apariencia de boton a los enlaces añadimos a cada enlace el atributo active para que se vea el boton-->
+				<ul class="nav nav-pills nav-fill">
+					<li class="nav-item">
+						<a href="#" class="nav-link active">Inicio</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link active">Blog</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link active">Contacto</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link disabled">Proximamente</a>
+					</li>
+				</ul>
+	<p><pre>
+&lt;h3&gt;Menu Formato Pildora&lt;/h3&gt;
+&lt;!--nav-pill le da una apariencia de boton a los enlaces añadimos a cada enlace el atributo active para que se vea el boton--&gt;
+&lt;ul class="nav nav-pills nav-fill"&gt;
+	&lt;li class="nav-item"&gt;
+		&lt;a href="#" class="nav-link active"&gt;Inicio&lt;/a&gt;
+	&lt;/li&gt;
+	&lt;li class="nav-item"&gt;
+		&lt;a href="#" class="nav-link active"&gt;Blog&lt;/a&gt;
+	&lt;/li&gt;
+	&lt;li class="nav-item"&gt;
+		&lt;a href="#" class="nav-link active"&gt;Contacto&lt;/a&gt;
+	&lt;/li&gt;
+	&lt;li class="nav-item"&gt;
+		&lt;a href="#" class="nav-link disabled"&gt;Proximamente&lt;/a&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+	</pre></p>
+	<div id="Desplegable"></div>
+	<h4>Añadir Desplegable al menu</h4>
+	<p>También podemos añadir elementos desplegables a  nuestros menús de navegación, tanto al de tipo tabs como al de píldoras. Para esto simplemente añadiremos el   dropdown como un elemento del menú más</p>
+	<h5>Menu horizontal con pestaña desplegable</h5>
+				<!--nav-pill le da una apariencia de boton a los enlaces añadimos a cada enlace el atributo active para que se vea el boton-->
+				<ul class="nav nav-tabs">
+					<li class="nav-item">
+						<a href="#" class="nav-link active">Inicio</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link active dropdown-toggle" data-toggle="dropdown">Blog</a>
+						<div class="dropdown-menu">
+							<a href="#" class="dropdown-item"> Link 1</a>
+							<a href="#" class="dropdown-item"> Link 2</a>
+							<a href="#" class="dropdown-item"> Link 3</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link active">Contacto</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link disabled">Proximamente</a>
+					</li>
+				</ul>
+	<p><pre>
+&lt;h5&gt;Menu horizontal con pestaña desplegable&lt;/h5&gt;
+&lt;!--nav-pill le da una apariencia de boton a los enlaces añadimos a cada enlace el atributo active para que se vea el boton--&gt;
+&lt;ul class="nav nav-tabs"&gt;
+	&lt;li class="nav-item"&gt;
+		&lt;a href="#" class="nav-link active"&gt;Inicio&lt;/a&gt;
+	&lt;/li&gt;
+	&lt;li class="nav-item"&gt;
+		&lt;a href="#" class="nav-link active dropdown-toggle" data-toggle="dropdown"&gt;Blog&lt;/a&gt;
+		&lt;div class="dropdown-menu"&gt;
+			&lt;a href="#" class="dropdown-item"&gt; Link 1&lt;/a&gt;
+			&lt;a href="#" class="dropdown-item"&gt; Link 2&lt;/a&gt;
+			&lt;a href="#" class="dropdown-item"&gt; Link 3&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/li&gt;
+	&lt;li class="nav-item"&gt;
+		&lt;a href="#" class="nav-link active"&gt;Contacto&lt;/a&gt;
+	&lt;/li&gt;
+	&lt;li class="nav-item"&gt;
+		&lt;a href="#" class="nav-link disabled"&gt;Proximamente&lt;/a&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+	</pre></p>
+	<div id="Dinamicos"></div>
+	<h4>Elementos Dinamicos</h4>
+	<p>Podemos  hacer  que  laspestañas  seandinámicas  (toggleable  tabs),  añadiendo  el    atributodata-toggle=“tab” a cada enlace, y agregaremos una clase .tab-pane con un ID único paracada una de las pestañas</p>
+	<h6>Pestañas dinamicas</h6>
+				<!--Nav Tabs-->
+				<ul class="nav nav-tabs">
+					<li class="nav-item">
+						<a href="#Inicio" class="nav-link " data-toggle="tab">Inicio</a>
+					</li>
+					<li class="nav-item">
+						<a href="#Blog" class="nav-link " data-toggle="tab">Blog</a>
+					</li>
+					<li class="nav-item">
+						<a href="#Contacto" class="nav-link " data-toggle="tab">Contacto</a>
+					</li>
+					<li class="nav-item">
+						<a href="#" class="nav-link disabled">Proximamente</a>
+					</li>
+				</ul>
+
+				<!--Tab panes -->
+				<div class="tab-content">
+					<div id="Inicio" class="container tab-pane active">
+						<h6>Inicio</h6>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</div>
+					<div id="Blog" class="container tab-pane fade">
+						<h6>Blog</h6>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</div>
+					<div id="Contacto" class="container tab-pane fade">
+						<h6>Contacto</h6>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+					</div>
+				</div>
+	<p><pre>
+&lt;!--Nav Tabs--&gt;
+&lt;ul class="nav nav-tabs"&gt;
+	&lt;li class="nav-item"&gt;
+		&lt;a <strong>href="#Inicio"</strong> class="nav-link "<strong>data-toggle="tab"</strong> &gt;Inicio&lt;/a&gt;
+	&lt;/li&gt;
+	&lt;li class="nav-item"&gt;
+		&lt;a href="#Blog" class="nav-link " data-toggle="tab"&gt;Blog&lt;/a&gt;
+	&lt;/li&gt;
+	&lt;li class="nav-item"&gt;
+		&lt;a href="#Contacto" class="nav-link " data-toggle="tab"&gt;Contacto&lt;/a&gt;
+	&lt;/li&gt;
+	&lt;li class="nav-item"&gt;
+		&lt;a href="#" class="nav-link disabled"&gt;Proximamente&lt;/a&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!--Tab panes --&gt;
+&lt;div class="<strong>tab-content</strong>"&gt;
+	&lt;div id="Inicio" class="container <strong>tab-pane</strong> active"&gt;
+		&lt;h6&gt;Inicio&lt;/h6&gt;
+		&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;div id="Blog" class="container tab-pane fade"&gt;
+		&lt;h6&gt;Blog&lt;/h6&gt;
+		&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;div id="Contacto" class="container tab-pane fade"&gt;
+		&lt;h6&gt;Contacto&lt;/h6&gt;
+		&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+	</pre></p>
+	<h6><strong>Podemos aplicar lo mismo a laspíldoraspara hacerlasdinámicas (toggleable pills),   sólo hayque cambiar el atributo data-toggle=“pill” en la parte del nav tabs</strong></h6>
+	<p>Codigo de nav tabs el tab panes seria igual:</p>
+	<p><pre>
+&lt;!--Nav Tabs--&gt;
+&lt;ul class="nav <strong>nav-pills</strong>"&gt;
+	&lt;li class="nav-item"&gt;
+		&lt;a <strong>href="#Inicio"</strong> class="nav-link "<strong>data-toggle="pill"</strong> &gt;Inicio&lt;/a&gt;
+	&lt;/li&gt;
+	&lt;li class="nav-item"&gt;
+		&lt;a href="#Blog" class="nav-link " data-toggle="pill"&gt;Blog&lt;/a&gt;
+	&lt;/li&gt;
+	&lt;li class="nav-item"&gt;
+		&lt;a href="#Contacto" class="nav-link " data-toggle="pill"&gt;Contacto&lt;/a&gt;
+	&lt;/li&gt;
+	&lt;li class="nav-item"&gt;
+		&lt;a href="#" class="nav-link disabled"&gt;Proximamente&lt;/a&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+	</pre></p>
+	<br>
+	<hr>
+	<br>
+	<div id="BarraNavegacion"></div>
+	<h4>Barra de Navegación</h4>
+	<p>Creación  de  la  barra  principal de  navegación  de  nuestra  web mediante  la  clase <strong>navbar.</strong>.  Esta  barra  se  adaptará al  tamaño  de  pantalla,  mostrando  los elementos colapsados en un botón en pantallas pequeñas y de forma normal para pantallas más grandes. En las pantallas pequeñas, los elementos de navegación se colapsarían en un botón (togglerbutton). En caso de no usar la etiqueta <strong>&lt;nav></strong>, podemos crear la barra de navegación usando un<strong>&lt;div></strong>  y añadiéndole el atributo <strong>role=“navigation”</strong> por cuestiones de accesibilidad.</p>
+	<p>Para crear esta barra en nuestro sitio web utilizaremos la etiqueta <strong>&lt;nav></strong>, que es   la etiqueta de HTML5 que identifica un elemento de navegación</p>
+	<p>A    esta etiqueta añadiremos las clases<strong> .navbar</strong> y<strong>.navbar-expand-*</strong>  para indicar el   tamaño a partir del cual la barra se mostrará de forma expandida. Por ejemplo, la etiqueta <strong>.navbar-expand-lg</strong>  indica  que  la  barra  se  mostrará  en  su  tamaño  completo  a  partir del  tamaño  depantalla grande (lg),    apilándose verticalmente para tamaños más pequeños. Si   queremos, lo podemos  modificar  cambiando  el    tamaño  “lg”  por  otro  de  los  posibles  tamaños  definidospor Bootstrap: <strong>“sm”,  “md”,  “lg” o  “xl”</strong>. </p>
+	<p><code>&lt;nav class="navbar navbar-expand-sm bg-light"&gt;</code></p>
+	<h5>Barra navegacion Basica</h5>
+	<!--Barra de navegacion Basica-->
+	<nav class="navbar navbar-expand-sm bg-light">
+		<!--Enlaces-->
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a href="#I" class="nav-link ">Inicio</a>
+			</li>
+			<li class="nav-item">
+				<a href="#I" class="nav-link ">Blog</a>
+			</li>
+			<li class="nav-item">
+				<a href="#I" class="nav-link ">Galeria</a>
+			</li>
+			<li class="nav-item">
+				<a href="#I" class="nav-link ">Contacto</a>
+			</li>
+		</ul>
+	</nav>
+	<p>Para  añadir  los  enlaces  dentro  de  la  barra  de  navegación  usamos  el    elemento<strong> &lt;ul></strong> con  la clase <strong>.navbar-nav</strong> y  agregamos  cada  enlace  dentro  de  un elemento <strong>&lt;li></strong> con  clase <strong>.nav-item</strong>, seguido del enlace <strong>&lt;a> con clase .nav-link</strong></p>
+	<p><pre>
+	&lt;!--Enlaces--&gt;
+	&lt;<strong>nav class="navbar navbar-expand-sm bg-light"</strong>&gt;
+		&lt;!--Enlaces--&gt;
+		&lt;ul class="<strong>navbar-nav</strong>"&gt;
+			&lt;li class="<strong>nav-item</strong>"&gt;
+				&lt;a href="#I" class="<strong>nav-link</strong> "&gt;Inicio&lt;/a&gt;
+			&lt;/li&gt;
+			&lt;li class="nav-item"&gt;
+				&lt;a href="#I" class="nav-link "&gt;Blog&lt;/a&gt;
+			&lt;/li&gt;
+			&lt;li class="nav-item"&gt;
+				&lt;a href="#I" class="nav-link "&gt;Galeria&lt;/a&gt;
+			&lt;/li&gt;
+			&lt;li class="nav-item"&gt;
+				&lt;a href="#I" class="nav-link "&gt;Contacto&lt;/a&gt;
+			&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/nav&gt;
+	</pre></p>
+	<p><strong>Si   quieres que la barra de navegación se visualice centrada, añade la clase .justify-content-center</strong></p>
+	<p><code>&lt;nav class="navbar navbar-expand-sm bg-light justify-content-center"&gt;</code></p>
+	<nav class="navbar navbar-expand-sm bg-light justify-content-center">
+		<!--Enlaces-->
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a href="#I" class="nav-link ">Inicio</a>
+			</li>
+			<li class="nav-item">
+				<a href="#I" class="nav-link ">Blog</a>
+			</li>
+			<li class="nav-item">
+				<a href="#I" class="nav-link ">Galeria</a>
+			</li>
+			<li class="nav-item">
+				<a href="#I" class="nav-link ">Contacto</a>
+			</li>
+		</ul>
+	</nav>
+	<p><strong>Si   eliminas la clase .navbar-expand-sm|md|lg|xl la barra se mostrará en vertical</strong></p>
+	<nav class="navbar bg-light">
+		<!--Enlaces-->
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a href="#I" class="nav-link ">Inicio</a>
+			</li>
+			<li class="nav-item">
+				<a href="#I" class="nav-link ">Blog</a>
+			</li>
+			<li class="nav-item">
+				<a href="#I" class="nav-link ">Galeria</a>
+			</li>
+			<li class="nav-item">
+				<a href="#I" class="nav-link ">Contacto</a>
+			</li>
+		</ul>
+	</nav>
+	<p><code>&lt;nav class="navbar bg-light"></code></p>
+	<div id="CambiarColor"></div>
+	<h5>Cambiar color:</h5>
+	<h6><strong>En todos los ejemplos anteriores usamos la clase bg-light sin atributo navbar-light o navbar-dark</strong></h6>
+	<p>En primer l u ga r, tendremos que elegir entre un tema claro(con la  clase <strong>.navbar-light</strong>) que asignará a los elementos de la barra un color negro, o   un tema oscuro(<strong>clase.navbar-dark</strong>) que  asignará    a  los  elementos  un color  claro.  Además,  podemos  utilizar  cualquiera  de  las  clases <strong>.bg-color</strong> para cambiar  el    color  de  fondo  de  la  barra  de  navegación: <strong>.bg-primary, .bg-success,.bg-info, .bg-warning, .bg-danger, .bg-secondary, .bg-darky .bg-light.</strong></p>
+	<p>navbar-light</p>
+	<nav class="navbar navbar-expand-sm bg-light navbar-light">
+		<!--Enlaces-->
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a href="#I" class="nav-link ">Inicio</a>
+			</li>
+			<li class="nav-item">
+				<a href="#I" class="nav-link ">Blog</a>
+			</li>
+			<li class="nav-item">
+				<a href="#I" class="nav-link ">Galeria</a>
+			</li>
+			<li class="nav-item">
+				<a href="#I" class="nav-link ">Contacto</a>
+			</li>
+		</ul>
+	</nav>
+	<p><code>&lt;nav class="navbar navbar-expand-sm<strong> bg-light navbar-light</strong>"&gt;</code></p>
+	<p>navbar-dark</p>
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		<!--Enlaces-->
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a href="#I" class="nav-link ">Inicio</a>
+			</li>
+			<li class="nav-item">
+				<a href="#I" class="nav-link ">Blog</a>
+			</li>
+			<li class="nav-item">
+				<a href="#I" class="nav-link ">Galeria</a>
+			</li>
+			<li class="nav-item">
+				<a href="#I" class="nav-link ">Contacto</a>
+			</li>
+		</ul>
+	</nav>
+	<p><code>&lt;nav class="navbar navbar-expand-sm<strong> bg-dark navbar-dark</strong>"&gt;</code></p>
+	<p>Cambiando el atributo bg-*</p>
+	<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+		<!--Enlaces-->
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a href="#I" class="nav-link ">Inicio</a>
+			</li>
+			<li class="nav-item">
+				<a href="#I" class="nav-link ">Blog</a>
+			</li>
+			<li class="nav-item">
+				<a href="#I" class="nav-link ">Galeria</a>
+			</li>
+			<li class="nav-item">
+				<a href="#I" class="nav-link ">Contacto</a>
+			</li>
+		</ul>
+	</nav>
+	<p><code>&lt;nav class="navbar navbar-expand-sm<strong> bg-primary navbar-dark</strong>"&gt;</code></p>
+	<div id="Logotipo"></div>
+	<h5>Añadir Logotipo:</h5>
+	<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+		<!--Logotipo-->
+		<a href="#" class="navbar-brand">
+			<img src="./images/logotipo.jpg" alt="Logotipo" style="width:40px;">
+		</a>
+		<!--Enlaces-->
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a href="#I" class="nav-link ">Inicio</a>
+			</li>
+			<li class="nav-item">
+				<a href="#I" class="nav-link ">Blog</a>
+			</li>
+			<li class="nav-item">
+				<a href="#I" class="nav-link ">Galeria</a>
+			</li>
+			<li class="nav-item">
+				<a href="#I" class="nav-link ">Contacto</a>
+			</li>
+		</ul>
+	</nav>
+	<p><pre>
+&lt;nav class="navbar navbar-expand-sm bg-primary navbar-dark"&gt;
+	&lt;!--Logotipo--&gt;
+	&lt;a href="#" class="navbar-brand"&gt;
+		&lt;img src="./images/logotipo.jpg" alt="Logotipo" style="width:40px;"&gt;
+	&lt;/a&gt;
+	&lt;!--Enlaces--&gt;
+	&lt;ul class="navbar-nav"&gt;
+		&lt;li class="nav-item"&gt;
+			&lt;a href="#I" class="nav-link "&gt;Inicio&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li class="nav-item"&gt;
+			&lt;a href="#I" class="nav-link "&gt;Blog&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li class="nav-item"&gt;
+			&lt;a href="#I" class="nav-link "&gt;Galeria&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li class="nav-item"&gt;
+			&lt;a href="#I" class="nav-link "&gt;Contacto&lt;/a&gt;
+		&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/nav&gt;
+	</pre></p>
+	<div id="Desplegable"></div>
+	<h5>Navbar con Desplegable(Dropdown)</h5>
+	<p>Para añadir el desplegable le indicamos la clase dropdown al elemento de la lista li el resto de codigo de la estructura nav es igual</p>
+
+	<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+		<!--Logotipo-->
+		<a href="#" class="navbar-brand">
+			<img src="./images/logotipo.jpg" alt="Logotipo" style="width:40px;">
+		</a>
+		<!--Enlaces-->
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a href="#I" class="nav-link ">Inicio</a>
+			</li>
+			<li class="nav-item">
+				<a href="#I" class="nav-link ">Blog</a>
+			</li>
+			<li class="nav-item dropdown">
+				<a href="#" class="nav-link dropdown-toggle" id="navbardorp" data-toggle="dropdown">Desplegable</a>
+				<div class="dropdown-menu">
+					<a href="#" class="dropdown-item">Opcion 1</a>
+					<a href="#" class="dropdown-item">Opcion 2</a>
+					<a href="#" class="dropdown-item">Opcion 3</a>
+				</div>
+			</li>
+		</ul>
+	</nav>
+	<p>Codigo del elemento li de con clase dropdown (boton deplegable de la barra de navegacion)</p>
+	<p><pre>
+&lt;li class="nav-item dropdown"&gt;
+	&lt;a href="#" class="nav-link dropdown-toggle" id="navbardorp" data-toggle="dropdown"&gt;Desplegable&lt;/a&gt;
+	&lt;div class="dropdown-menu"&gt;
+		&lt;a href="#" class="dropdown-item"&gt;Opcion 1&lt;/a&gt;
+		&lt;a href="#" class="dropdown-item"&gt;Opcion 2&lt;/a&gt;
+		&lt;a href="#" class="dropdown-item"&gt;Opcion 3&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/li&gt;
+	</pre></p>
+	<div id="Formulario"></div>
+	<h5>Navbar con Formulario</h5>
+	<p>Podemos añadir formularios a nuestra barra de navegación utilizando el   tipo deformularioinline, definido con la clase <strong>.form-inline</strong></p>
+	<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+		<!--Logotipo-->
+		<a href="#" class="navbar-brand">
+			<img src="./images/logotipo.jpg" alt="Logotipo" style="width:40px;">
+		</a>
+		<!--Enlaces-->
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a href="#I" class="nav-link ">Inicio</a>
+			</li>
+			<li class="nav-item">
+				<a href="#I" class="nav-link ">Blog</a>
+			</li>
+			<form action="#" class="form-inline">
+				<input class="form-control mr-sm-2" type="text" placeholder="Buscar..">
+				<button class="btn btn-info" type="submit">Buscar</button>
+			</form>
+		</ul>
+	</nav>
+	<p>En este caso un formulario con un campo de texto y un boton</p>
+	<p>Codigo del formulario, se introduciria al terminar la lista(no va dentro de un li como el desplegable)</p>
+	<p><pre>
+&lt;form action="#" class="form-inline"&gt;
+	&lt;input class="form-control mr-sm-2" type="text" placeholder="Buscar.."&gt;
+	&lt;button class="btn btn-info" type="submit"&gt;Buscar&lt;/button&gt;
+&lt;/form&gt;
+	</pre></p>
+	<div id="Plegable"></div>
+	<h5>Barra de Navegacion Plegable</h5>
+	<p>Podemos crear una barra de navegación plegable, muy utilizada especialmente en pantallaspequeñas,  para  ocultar  los  enlaces  de  navegación  y  reemplazarlos  por  un botón  (togglerbutton) que los muestra al hacer clic sobre él</p>
+	<p>Para crear una barra de navegación plegable, haremos uso de un <strong>botón conclass="navbar-toggler", data-toggle="collapse" y data-target="#nombre"</strong> .  La  lista  de  enlaces  tenemos que  meterla  dentro  de  una  caja <strong>&lt;div> con  identificador“nombre”y  las  clases.collapsey .navbar-collapse,</strong>   que   definirá   la   zona   que   se   colapsará (u   ocultará)   para   pantallaspequeñas.</p>
+	<p>Estado activo / deshabilitado: puedes añadir la clase .active a un elemento <a> para resaltar el enlace actual, o la clase .disabled para indicar que no se puede hacer clic en el enlace.</p>
+	<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+		<!--Logotipo-->
+		<a href="#" class="navbar-brand">
+			<img src="./images/logotipo.jpg" alt="Logotipo" style="width:40px;">
+		</a>
+		<!--Boton-->
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_plegable">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<!--Enlaces-->
+		<div class="collapse navbar-collapse" id="navbar_plegable">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a href="#I" class="nav-link ">Inicio</a>
+				</li>
+				<li class="nav-item">
+					<a href="#I" class="nav-link ">Blog</a>
+				</li>
+				<form action="#" class="form-inline">
+					<input class="form-control mr-sm-2" type="text" placeholder="Buscar..">
+					<button class="btn btn-info" type="submit">Buscar</button>
+				</form>
+			</ul>
+		</div>
+		
+	</nav>
+	<p>El boton solo se muestra cuando la pantalla es pequeña</p>
+	<p><pre>
+		&lt;button class="<strong>navbar-toggler</strong>" type="button" <strong>data-toggle="collapse" data-target="#navbar_plegable"</strong>&gt;
+			&lt;span class="<strong>navbar-toggler-icon</strong>"&gt;&lt;/span&gt;
+		&lt;/button&gt;
+		&lt;!--Enlaces--&gt;
+		&lt;<strong>div</strong> class="<strong>collapse navbar-collapse" id="navbar_plegable"</strong>&gt;
+			&lt;ul class="navbar-nav"&gt;
+				&lt;li class="nav-item"&gt;
+					&lt;a href="#I" class="nav-link "&gt;Inicio&lt;/a&gt;
+				&lt;/li&gt;
+				&lt;li class="nav-item"&gt;
+					&lt;a href="#I" class="nav-link "&gt;Blog&lt;/a&gt;
+				&lt;/li&gt;
+				&lt;form action="#" class="form-inline"&gt;
+					&lt;input class="form-control mr-sm-2" type="text" placeholder="Buscar.."&gt;
+					&lt;button class="btn btn-info" type="submit"&gt;Buscar&lt;/button&gt;
+				&lt;/form&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;
+	</pre></p>
+	<div id="Anclaje"></div>
+	<h5>Anclaje de la barra de Navegacion</h5>
+	<p>Bootstrap nos permite anclar o fijar la posición de la barra de <strong>tres formas</strong> distintas: fijarla a la parte superior añadiendo la clase <strong>.fixed-top</strong> a  la etiqueta<nav>, fijarla a  la parte inferior con <strong>fixed-bottom</strong>. o usar el   modo sticky (o pegajoso) con la clase <strong>.sticky-top</strong>, que anclarála   barra   a   la   parte   superior   mientras   se   realizascroll   y   cuando   se   alcanza el     tope permanecerá fija</p>
+	<p>En los modos ".fixed-top" y ".fixed-bottom", dado que la barra se colocará de forma "flotante" sobre el contenido, es posible que oculte una parte del mismo. Para solucionar esto es necesario añadir un pequeño espaciado superior o inferior a la etiqueta <body>. El alto de la barra es de 50px, por lo que se suele recomendar un espaciado de 70px, de la forma:
+	body { padding-top: 70px; } /* En el caso de .fixed-top */
+	body { padding-bottom: 70px; } /* En el caso de .fixed-bottom */</p>
+	<p><strong>Lo que se muestra a continuacion es con la clase stiky-top</strong></p>
+	<nav class="navbar sticky-top navbar-expand-sm bg-primary navbar-dark">
+		<!--Logotipo-->
+		<a href="#" class="navbar-brand">
+			<img src="./images/logotipo.jpg" alt="Logotipo" style="width:40px;">
+		</a>
+		<!--Boton-->
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_plegable">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<!--Enlaces-->
+		<div class="collapse navbar-collapse" id="navbar_plegable">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a href="#I" class="nav-link ">Inicio</a>
+				</li>
+				<li class="nav-item">
+					<a href="#I" class="nav-link ">Blog</a>
+				</li>
+				<form action="#" class="form-inline">
+					<input class="form-control mr-sm-2" type="text" placeholder="Buscar..">
+					<button class="btn btn-info" type="submit">Buscar</button>
+				</form>
+			</ul>
+		</div>
+		
+	</nav>
+	<p>Fixed-top(Ancla Arriba)</p>
+	<p><pre>
+		&lt;<strong>nav class="navbar fixed-top navbar-expand-sm bg-primary navbar-dark"</strong>&gt;
+		&lt;!--Logotipo--&gt;
+		&lt;a href="#" class="navbar-brand"&gt;
+			&lt;img src="./images/logotipo.jpg" alt="Logotipo" style="width:40px;"&gt;
+		&lt;/a&gt;
+		&lt;!--Boton--&gt;
+		&lt;button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_plegable"&gt;
+			&lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+		&lt;/button&gt;
+		&lt;!--Enlaces--&gt;
+		&lt;div class="collapse navbar-collapse" id="navbar_plegable"&gt;
+			&lt;ul class="navbar-nav"&gt;
+				&lt;li class="nav-item"&gt;
+					&lt;a href="#I" class="nav-link "&gt;Inicio&lt;/a&gt;
+				&lt;/li&gt;
+				&lt;li class="nav-item"&gt;
+					&lt;a href="#I" class="nav-link "&gt;Blog&lt;/a&gt;
+				&lt;/li&gt;
+				&lt;form action="#" class="form-inline"&gt;
+					&lt;input class="form-control mr-sm-2" type="text" placeholder="Buscar.."&gt;
+					&lt;button class="btn btn-info" type="submit"&gt;Buscar&lt;/button&gt;
+				&lt;/form&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;
+		
+	&lt;/nav&gt;
+	</pre></p>
+	<p>Fixed-bottom:(Ancla Abajo)</p>
+	<p><code>&lt;nav class="navbar fixed-bottom navbar-expand-sm bg-primary navbar-dark"&gt;</code></p>
+	
+
+	<p>Stiky-top(Ancla arriba mientras haces scroll,pero se fija al llegar arriba)</p>
+	<p><code>&lt;nav class="navbar stiky-top navbar-expand-sm bg-primary navbar-dark"&gt;</code></p>
+	<div id="Contenedores"></div>
+	<h5>Contenedores:</h5>
+	<p>	Aunque no es completamente necesario, sí que se recomienda añadir un elemento contenedor a la barra, el cual podrá añadirse de dos formas: un contenedor externo que incluya toda la barra, o un contenedor interno que incluya solo los elementos de la barra</p>
+	<p>En el primer caso, la barra aparecerá centrada. En el segundo caso, la barra ocupará todo el anchoposible</p>
+	<div class="container">
+		<nav class="navbar sticky-top navbar-expand-sm bg-primary navbar-dark">
+		<!--Logotipo-->
+		<a href="#" class="navbar-brand">
+			<img src="./images/logotipo.jpg" alt="Logotipo" style="width:40px;">
+		</a>
+		<!--Boton-->
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_plegable">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<!--Enlaces-->
+		<div class="collapse navbar-collapse" id="navbar_plegable">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a href="#I" class="nav-link ">Inicio</a>
+				</li>
+				<li class="nav-item">
+					<a href="#I" class="nav-link ">Blog</a>
+				</li>
+				<form action="#" class="form-inline">
+					<input class="form-control mr-sm-2" type="text" placeholder="Buscar..">
+					<button class="btn btn-info" type="submit">Buscar</button>
+				</form>
+			</ul>
+		</div>
+		</nav>
+	</div>
+	<p><pre>
+	&lt;<strong>div class="container"</strong>&gt;
+		&lt;nav class="navbar sticky-top navbar-expand-sm bg-primary navbar-dark"&gt;
+		&lt;!--Logotipo--&gt;
+		&lt;a href="#" class="navbar-brand"&gt;
+			&lt;img src="./images/logotipo.jpg" alt="Logotipo" style="width:40px;"&gt;
+		&lt;/a&gt;
+		&lt;!--Boton--&gt;
+		&lt;button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_plegable"&gt;
+			&lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+		&lt;/button&gt;
+		&lt;!--Enlaces--&gt;
+		&lt;div class="collapse navbar-collapse" id="navbar_plegable"&gt;
+			&lt;ul class="navbar-nav"&gt;
+				&lt;li class="nav-item"&gt;
+					&lt;a href="#I" class="nav-link "&gt;Inicio&lt;/a&gt;
+				&lt;/li&gt;
+				&lt;li class="nav-item"&gt;
+					&lt;a href="#I" class="nav-link "&gt;Blog&lt;/a&gt;
+				&lt;/li&gt;
+				&lt;form action="#" class="form-inline"&gt;
+					&lt;input class="form-control mr-sm-2" type="text" placeholder="Buscar.."&gt;
+					&lt;button class="btn btn-info" type="submit"&gt;Buscar&lt;/button&gt;
+				&lt;/form&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;
+		&lt;/nav&gt;
+	&lt;/div&gt;
+	</pre></p>
+	<br>
+	<nav class="navbar sticky-top navbar-expand-sm bg-primary navbar-dark">
+		<div class="container">
+			<!--Logotipo-->
+			<a href="#" class="navbar-brand">
+				<img src="./images/logotipo.jpg" alt="Logotipo" style="width:40px;">
+			</a>
+			<!--Boton-->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_plegable">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<!--Enlaces-->
+			<div class="collapse navbar-collapse" id="navbar_plegable">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a href="#I" class="nav-link ">Inicio</a>
+					</li>
+					<li class="nav-item">
+						<a href="#I" class="nav-link ">Blog</a>
+					</li>
+					<form action="#" class="form-inline">
+						<input class="form-control mr-sm-2" type="text" placeholder="Buscar..">
+						<button class="btn btn-info" type="submit">Buscar</button>
+					</form>
+				</ul>
+			</div>
+		</div>
+		
+	</nav>
+	<p><pre>
+		&lt;nav class="navbar sticky-top navbar-expand-sm bg-primary navbar-dark"&gt;
+		&lt;<strong>div class="container"</strong>&gt;
+			&lt;!--Logotipo--&gt;
+			&lt;a href="#" class="navbar-brand"&gt;
+				&lt;img src="./images/logotipo.jpg" alt="Logotipo" style="width:40px;"&gt;
+			&lt;/a&gt;
+			&lt;!--Boton--&gt;
+			&lt;button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_plegable"&gt;
+				&lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+			&lt;/button&gt;
+			&lt;!--Enlaces--&gt;
+			&lt;div class="collapse navbar-collapse" id="navbar_plegable"&gt;
+				&lt;ul class="navbar-nav"&gt;
+					&lt;li class="nav-item"&gt;
+						&lt;a href="#I" class="nav-link "&gt;Inicio&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li class="nav-item"&gt;
+						&lt;a href="#I" class="nav-link "&gt;Blog&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;form action="#" class="form-inline"&gt;
+						&lt;input class="form-control mr-sm-2" type="text" placeholder="Buscar.."&gt;
+						&lt;button class="btn btn-info" type="submit"&gt;Buscar&lt;/button&gt;
+					&lt;/form&gt;
+				&lt;/ul&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		
+	&lt;/nav&gt;
+	</pre></p>
+	
+
+
+
+
+
+<script src="./js/jquery-3.4.1.min.js"></script>
+<script src="./js/popper.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+</body>
+</html>

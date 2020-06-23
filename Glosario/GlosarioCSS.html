@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<title></title>
+	</head>
+	<body>
+		<h2>Tipos de Estilos</h2>
+		<p>Estilos en linea: Estilos dentro de las etiquetas html usando atributo style</p>
+		<p>Estilo Embebido: Declarado en la cabecera del documento hrml</p>
+		<p>Hojas Anexas: Estilos en documento externo referenciaco por link <code>&lt;link href="css/style.css" rel="stylesheet" type="text/css"&gt;</code></p>
+		<p>href=> ruta, rel=>especifica que es hoja de estilos, type=> archivo de texto con sintaxis CSS</p>
+		<h3>Selectores Tipos</h3>
+		<p>Etiqueta => h1 { color:white; } (afectará a todos los elementos de la página cuya etiqueta html coincide con el valor del selector.)</p>
+		<p>Universal => * { margin: 0; } Selecciona todos los elementos de la pagina</p>
+		<p>Descendente=> p span{ margin: 0 } Afecta a todos los elementos span dentro de un parrafo p</p>
+		<p>Clase => .clase{ margin: 5 }=>(creacion) Hace referencia a una clase  "p class="clase"=>(aplicacion) </p>
+		<p>Id => #Id { margin: 5 }=>(creacion) Hace referencia a un id  "p id="clase"=>(aplicacion)</p>
+		<br>
+		<h3>Combinacion Selectores</h3>
+		<p>#alerta .aviso{ margin: 5 }=>(creacion) class="aviso" y id="alerta" =>(aplicacion) Afecta a aquellos elementos de clase aviso dentro de un id alerta</p>
+		<h3>Agrupacion de varios selectores</h3>
+		<p> p, table, td { margin: 5 } Aplica a parrafos tablas y celdas</p>
+		<hr>
+		<h2>Valores</h2>
+		<h3>Tamaños de los Valores de los Atributos</h3>
+		<p>Unidades de Longitud:</p>
+		<ul>
+			<li>Absolutas</li>
+			<li><ul>
+				<li>in(pulgadas)</li>
+				<li>cm(centimetros)</li>
+				<li>mm(milimetros)</li>
+				<li>pt(puntos)</li>
+				<li>pc(picas)</li>
+			</ul></li>
+			<li>Relativas</li>
+			<li><ul>
+				<li>em(relativa al tamaño de la fuente)</li>
+				<li>ex(relativa a la altura de la letra x minuscula)</li>
+				<li>px(relativa al tamaño de pixel usado en el dispositivo</li>
+			</ul></li>
+		</ul>
+		<p>Porcentajes => Se escribe el porcentaje</p>
+		<h3>Colores</h3>
+		<p>RGB tipos</p>
+		<ul>
+			<li>#rrggbb(hexadecimal)</li>
+			<li>#rgb</li>
+			<li>rgb(x,x,x)x=nº0-255</li>
+			<li>rgb(y%,y%,y%)y=nº 0-100</li>
+			<li>nombreColor</li>
+		</ul>
+		<h2>Fondos</h2>
+		<p>Background</p>
+		<ul>
+			<li>-color =>Color de fondo</li>
+			<li>-image =>Imagen</li>
+			<li>-repeat =>Indica si la imagen añadida de fondo se repite o no. Valoresque puede tomar: “repeat” (la imagen se repite tanto vertical como horizontalmente), “repeat-x” (sólo se repite horizontalmente), “repeat-y”  (sólo se repite verticalmente) y “no-repeat” (la imagen no se repite).</li>
+			<li>-attachment => Permite fijar o no la imagen al fondo. Valores:“fixed” (imagen fijada) o “scroll” (no fija)</li>
+			<li>-position => Permitefijar la posición inicial de la imagen de fondo. El valor por defecto es “lefttop” (posición de la imagen alineada a la izquierda arriba), pero pueden establecerse por pixeles (por ejemplo “background-position: 50px 100px” indica que la posición inicial de la imagen está a 50px a la derecha del borde izquierdo y a 100px por abajo del borde superior).</li>
+		</ul>
+		<p>Podemos unirse en uno solo, background </p>
+		<p>background: #ededed url(img/imagen01.jpg) no-repeat left top </p>
+		<hr>
+		<h2>Bordes</h2>
+		<p>border-width</p>
+		<p>Con estos atributos establecemos el grosor del borde.</p>
+		<ul>
+			<li>border-width(todos)</li>
+			<li>border-left-width</li>
+			<li>border-right-width</li>
+			<li>border-top-width</li>
+			<li>border-bottom-width</li>
+		</ul>
+		<p>border-color</p>
+		<p>Se establece el color delborde, el color irá en hexadecimal precedido del símbolo almohadilla (#), en formato RGB, o con el nombre del color.</p>
+		<ul>
+			<li>border-color(todos)</li>
+			<li>border-left-color</li>
+			<li>border-right-color</li>
+			<li>border-top-color</li>
+			<li>border-bottom-color</li>
+		</ul>
+		<p>border-style</p>
+		<p>Establece el estilo del borde, siendo los valores none(ninguno), dotted(punteado), dashed(a trazos), solid(una línea), double(doble línea), groove(canal), ridge(cresta), inset(bajorrelieve), y outset(altorrelieve) <strong>border-style="outset"</strong></p>
+		<ul>
+			<li>border-style(todos)</li>
+			<li>border-left-style</li>
+			<li>border-right-style</li>
+			<li>border-top-style</li>
+			<li>border-bottom-style</li>
+		</ul>
+		<h2>Estilos de Texto</h2>
+		<h3>Fuente</h3>
+		<p>font-family: Arial, Helvetica, verdana;</p>
+		<p>font-size 0.8em =>puede tomar como valores  las unidades de medida relativas (emo %),  o tamaños relativos (larger,smaller) o tamaños absolutos (xx-small, x-small, small, medium, large, x-large, xx-large</p>
+		<p>color: #000(negro) => Color de la fuente</p>
+		<br>
+		<h3>Alineacion</h3>
+		<p>text-align: </p>
+		<ul>Opciones
+			<li>left</li>
+			<li>right</li>
+			<li>center</li>
+			<li>justify</li>
+		</ul>
+		<br>
+		<h3>Estilo y decoloracion del texto</h3>
+		<h4>text-transform:</h4>
+		<ul>
+			<li>uppercase => MAYUSCULAS</li>
+			<li>lowercase => minusculas</li>
+			<li>capitalize => 1º Letra Mayuscula</li>
+			<li>none => nada</li>
+		</ul>
+		<p>font-style: </p>
+		<ul>opciones
+			<li>normal</li>
+			<li>italic => Cursiva o Italica   "p class="italic" </li>
+			<li> oblique => inclinar la fuente normal hacia la derecha. " p class="oblique"</li>
+		</ul>
+		<p>Otros estilos de texto:</p>
+		<p>text-decoration: </p>
+		<ul>
+			<li>underline => Subrayado</li>
+			<li>line-throught => Linea por encima</li>
+			<li>overline => Tachado</li>
+			<li>blink => Efecto Parpadeante</li>
+			<li>none => sin decoracion(normal)</li>
+		</ul>
+		<br>
+		<h3>Grosor del texto</h3>
+		<p>font-weight:</p>
+		<ul>
+			<li>normal</li>
+			<li>bold (negrita)</li>
+			<li>bolder(mas negrita)</li>
+			<li>lighter(ligero)</li>
+			<li>100 a 900 (grado de negrita)</li>
+		</ul>
+		<h3>Espaciado entre letras</h3>
+		<p>letter-spacing: unidad de medida =>  "letter-spacing: 3px; "</p>
+		<h3>Espaciado entre lineas(filas)</h3>
+		<p>line-height: unidad de medida  =>  "line-height: 3em; "</p>
+		<hr>
+		<h2>Margenes y Espaciados</h2>
+		<h3>margin: unidad de medida   => es el espacio en blanco que se puede crear alrededor de un elemento HTML.</h3>
+		<ul>margin:
+			<li>-top</li>
+			<li>-bottom</li>
+			<li>-right</li>
+			<li>-left</li>
+		</ul>
+		<p> margin: 0px (sin margen)   margin: auto (centra contenido)</p>
+		<hr>
+		<h2>Espaciados o Rellenos (padding)</h2>
+		<h3>padding: unidad de medida  => el espacio en blanco que queda entre el borde de un elemento y su contenido. </h3>
+		<ul>padding:
+			<li>-top</li>
+			<li>-bottom</li>
+			<li>-right</li>
+			<li>-left</li>
+		</ul>
+		<hr>
+		<h2>Cajas Flotantes</h2>
+		<h3>float</h3>
+		<p>permite colocar los div uno junto al otro si hay espacio (tener en cuenta padding y margin para el tamaño total) </p>
+		<p>Cuando una caja se convierte en una caja flotante, se desplaza hasta la zona más a la izquierda o más a
+			la derecha de la posición en la que originalmente se encontraba. Si se indica un valor “left”, la caja se
+			desplaza hasta el puto más a la izquierda posible en esa misma línea (si no existe sitio en esa línea, la caja
+			baja una línea y se muestra lo más a la izquierda posible en esa nueva línea). El resto de elementos
+			adyacentes se adaptan y fluyen alrededor de la caja flotante. El valor “right” tiene una funcionamiento idéntico, salvo que en este caso, la caja se desplaza hacia la derecha. El valor “none” permite anular el
+			posicionamiento flotante de forma que el elemento se muestre en su posición original.</p>
+		<br>
+		<h3>Atributo Clear</h3>
+		<p>clear: both; => deshabilita la propiedad float (indica que en los laterales del bloque al que haga referencia no habrá ningún elemento,)</p>
+		<br>
+		<h3>Eliminar estilo </h3>
+		<p>Eliminar estilo de lista:</p>
+		<p>list-style:none;  => Elimina el estilo de puntos y una debajo de otra</p>
+		<p>podemos utilizarla para añadir anclas y hacer un menu</p>
+		<br>
+		<h3>Display: block(modo bolque) o inline(en una linea) ( esta propiedad define el tipo de caja que genera un elemento. Todos los elementos generados en el HTML ocupan un espacio)</h3>
+		<ul>Display:
+			<li>none => se indica al elemento que no genere ninguna caja, con lo que el elemento simplemente desaparece, el elemento deja de ocupar un espacio en la presentación del documento, por lo que los elementos adyacentes simplemente ignoran su presencia y ocupan su espacio.</li>
+			<li>block =>elemento no permitirá la ubicación de elementos adyacentes, ocupará todo el ancho disponible dentro del elemento contenedor, y tendrá una altura que será determinada por el contenido,Cuando se determina el ancho, el elemento ocupará solo la extensión determinada, pero sin permitir la ubicación de elementos adyacentes, aún cuando haya espacio suficiente para que se ubique en él otro elemento.</li>
+			<li>inline =>  permiten la ubicación de elementos adyacentes ,No puede determinarse el ancho ni la altura de estos elementos, ya que como elementos en línea, las dimensiones de los mismos son determinadas por el contenido</li>
+		</ul>
+		<hr>
+		<h2>Clase Hover</h2>
+		<p>Las pseudo-clases :hover, :active, :link y :visited permiten al diseñador modificar el estilo de un
+			elemento cuando el usuario realice una acción sobre el mismo. A continuación, se indican las acciones del
+			usuario que activan cada pseudo-clase:</p>
+		<h4>El orden de uso de estas pseudo clases es como se muestran a continuacion.!!</h4>
+		<p>:link. se aplica a todos los vínculos que todavía no han sido visitados por el usuario.</p>
+		<p>:visited, se aplica a todos los vínculos que han sido visitados al menos una vez por el usuario.</p>
+		<p>:hover, el estilo creado se activa cuando el usuario sitúa el ratón encima de un elemento.</p>
+		<p>:active, el estilo creado se activa cuando el usuario pulsa con el ratón sobre un elemento. Se aplica
+			durante un espacio de tiempo prácticamente imperceptible, ya que sólo dura desde que el usuario
+			pulsa el botón del ratón hasta que lo suelta.</p>
+		<p><code>&lt;p:hover { margin: 5px } &gt;</code></p>
+		<p>Proceso de formado para el menu hover</p>
+		<p>Si queremos que todo el nav tenga un estilo lo hacemos en la etiqueta nav indicando color de fondo ancho y lo flotamos a la izquierda</p>
+		<p>Quitamos el estilo a nav ul(afecta al listado entero) => list-style: none;(quita efectos de lista) text-align:center; padding:0;</p>
+		<p>Seguimos por los elementos nav ul li(cada elemento li de la lista pero no al enlace de dentro) => display:block;(modo bloque) float:left;(flotado a la izquierda) Color de fondo negro y el resto de paddin, margin y border</p>
+		<p>Para cada uno de los enlaces nav ul li a(enlaces dentro de li dentro de ul dentro de nav) => text-decoration:none;(quitamos subrayado y otras) text-transform:uppercase;(Mayusculas) color:#white;(color letra)
+		<p>Por ultimo añadimos el hover nav ul li a:hover => Cambiamos el fondo y el color de letra</p>
+	</body>
+</html>

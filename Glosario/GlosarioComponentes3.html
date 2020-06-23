@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link type="text/css" rel="stylesheet" href="./css/bootstrap.min.css">
+	<style>
+        body{
+            margin: 10px 50px;
+        }
+        h4 { color: blue; }
+        h5{ color: rgba(8, 189, 235, 0.692);}
+        strong{ color: rgba(115, 165, 19, 0.747); }
+        .clase{color: crimson;}
+        .barra{
+    		margin-bottom: 50px;
+    	}
+    </style>
+	<title>Componentes 3</title>
+</head>
+<body>
+	<div class="container">
+		<div class="row barra">
+    <div class="col">
+        <!--Enlaces-->
+    <nav class="navbar fixed-top navbar-expand-sm bg-dark ">
+        <!--Enlaces-->
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="navbardorp" data-toggle="dropdown">Gird</a>
+                <div class="dropdown-menu">
+                    <a href="GlosarioGird.html#Tama" class="dropdown-item nav-link">Tamaños</a>
+                    <a href="GlosarioGird.html#Alineacion" class="dropdown-item nav-link">Alineacion</a>
+                    <a href="GlosarioGird.html#Otros" class="dropdown-item nav-link">Otros</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="navbardorp" data-toggle="dropdown">Tipografia</a>
+                <div class="dropdown-menu">
+                    <a href="GlosarioTipografia.html#Encabezados" class="dropdown-item nav-link">Encabezados</a>
+                    <a href="GlosarioTipografia.html#Alineacion" class="dropdown-item nav-link">Alineacion</a>
+                    <a href="GlosarioTipografia.html#Conversiones" class="dropdown-item nav-link">Conversiones</a>
+                    <a href="GlosarioTipografia.html#Blockquote" class="dropdown-item nav-link">Blockquote</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="navbardorp" data-toggle="dropdown">Componentes 1</a>
+                <div class="dropdown-menu">
+                    <a href="GlosarioComponentes1.html#Imagenes" class="dropdown-item nav-link">Imagenes</a>
+                    <a href="GlosarioComponentes1.html#Tablas" class="dropdown-item nav-link">Tablas</a>
+                    <a href="GlosarioComponentes1.html#BloquesCodigo" class="dropdown-item nav-link">Bloques Codigo</a>
+                    <a href="GlosarioComponentes1.html#MediaObjet" class="dropdown-item nav-link">Media Objet</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="navbardorp" data-toggle="dropdown">Componentes2</a>
+                <div class="dropdown-menu">
+                    <a href="GlosarioComponentes3.html#Alertas" class="dropdown-item nav-link">Alertas</a>
+                    <a href="GlosarioComponentes3.html#Insignias" class="dropdown-item nav-link">Insignias</a>
+                    <a href="GlosarioComponentes3.html#Cards" class="dropdown-item nav-link">Cards</a>
+                    <a href="GlosarioComponentes3.html#CardsExtras" class="dropdown-item nav-link">CardEsxtras</a>
+                    <a href="GlosarioComponentes3.html#CardsGrupos" class="dropdown-item nav-link">CardsGrupos</a>
+                    <a href="GlosarioComponentes3.html#Collapse" class="dropdown-item nav-link">Collapse</a>
+                    <a href="GlosarioComponentes3.html#Acordeon" class="dropdown-item nav-link">Acordeon</a>
+                    <a href="GlosarioComponentes3.html#Modal" class="dropdown-item nav-link">Modal</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="navbardorp" data-toggle="dropdown">Botones</a>
+                <div class="dropdown-menu">
+                    <a href="GlosarioBotones.html#Estilos" class="dropdown-item nav-link">Estilos</a>
+                    <a href="GlosarioBotones.html#GruposBotones" class="dropdown-item nav-link">GruposBotones</a>
+                    <a href="GlosarioBotones.html#Checkbox" class="dropdown-item nav-link">Checkbox</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="navbardorp" data-toggle="dropdown">Desplegables</a>
+                <div class="dropdown-menu">
+                    <a href="GlosarioDesplegables.html#Desplegables" class="dropdown-item nav-link">Desplegables</a>
+                    <a href="GlosarioDesplegables.html#Alineacion" class="dropdown-item nav-link">Alineacion</a>
+                    <a href="GlosarioDesplegables.html#GruposBotones" class="dropdown-item nav-link">GruposBotones</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="navbardorp" data-toggle="dropdown">Formularios</a>
+                <div class="dropdown-menu">
+                    <a href="GlosarioFormulario.html#Estructura" class="dropdown-item nav-link">Estructura</a>
+                    <a href="GlosarioFormulario.html#EnLinea" class="dropdown-item nav-link">EnLinea</a>
+                    <a href="GlosarioFormulario.html#Horizontal" class="dropdown-item nav-link">Horizontal</a>
+                    <a href="GlosarioFormulario.html#CuadrosAyuda" class="dropdown-item nav-link">CuadrosAyuda</a>
+                    <a href="GlosarioFormulario.html#Validacion" class="dropdown-item nav-link">Validacion</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="navbardorp" data-toggle="dropdown">Input</a>
+                <div class="dropdown-menu">
+                    <a href="GlosarioInput.html#Texto" class="dropdown-item nav-link">Texto</a>
+                    <a href="GlosarioInput.html#Select" class="dropdown-item nav-link">Select</a>
+                    <a href="GlosarioInput.html#RadioButton" class="dropdown-item nav-link">RadioButton</a>
+                    <a href="GlosarioInput.html#Checkbox" class="dropdown-item nav-link">Checkbox</a>
+                    <a href="GlosarioInput.html#Tamaños" class="dropdown-item nav-link">Tamaños</a>
+                    <a href="GlosarioInput.html#Agrupaciones" class="dropdown-item nav-link">Agrupaciones</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="navbardorp" data-toggle="dropdown">Navegacion</a>
+                <div class="dropdown-menu">
+                    <a href="GlosarioNavegacion.html#MenuBasico" class="dropdown-item nav-link">MenuBasico</a>
+                    <a href="GlosarioNavegacion.html#Pestañas" class="dropdown-item nav-link">Pestañas</a>
+                    <a href="GlosarioNavegacion.html#Boton" class="dropdown-item nav-link">Boton</a>
+                    <a href="GlosarioNavegacion.html#Justificado" class="dropdown-item nav-link">Justificado</a>
+                    <a href="GlosarioNavegacion.html#Desplegable" class="dropdown-item nav-link">Desplegable</a>
+                    <a href="GlosarioNavegacion.html#Dinamicos" class="dropdown-item nav-link">Dinamicos</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="navbardorp" data-toggle="dropdown">BarraNavegacion</a>
+                <div class="dropdown-menu">
+                    <a href="GlosarioNavegacion.html#BarraNavegacion" class="dropdown-item nav-link">BarraNavegacion</a>
+                    <a href="GlosarioNavegacion.html#Color" class="dropdown-item nav-link">Color</a>
+                    <a href="GlosarioNavegacion.html#Logotipo" class="dropdown-item nav-link">Logotipo</a>
+                    <a href="GlosarioNavegacion.html#Desplegable" class="dropdown-item nav-link">Desplegable</a>
+                    <a href="GlosarioNavegacion.html#Formulario" class="dropdown-item nav-link">Formulario</a>
+                    <a href="GlosarioNavegacion.html#Plegable" class="dropdown-item nav-link">Plegable</a>
+                    <a href="GlosarioNavegacion.html#Anclaje" class="dropdown-item nav-link">Anclaje</a>
+                    <a href="GlosarioNavegacion.html#Contenedores" class="dropdown-item nav-link">Contenedores</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+				<a href="#" class="nav-link dropdown-toggle" id="navbardorp" data-toggle="dropdown">Html/Css</a>
+				<div class="dropdown-menu">
+					<a href="GlosarioHTML.html" class="dropdown-item nav-link">Html</a>
+					<a href="GlosarioCSS.html" class="dropdown-item nav-link">Css</a>
+					<a href="GlosarioCSS3.html" class="dropdown-item nav-link">Css3</a>
+				</div>
+			</li>
+
+                    
+        </ul>
+    </nav>
+    </div>
+</div>
+		<div class="row">
+			<div class="col">
+				<div id="Alertas"></div>
+				<h4>Alertas</h4>
+				<p>En Bootstrap las alertas se crean con clase<strong class="clase">.alert</strong>  seguida de una de las clases contextuales:</p>
+				<ul>
+					<li>.alert-sucess(Verde)</li>
+					<li>.alert-info(Azul)</li>
+					<li>.alert-warning(Naranja)</li>
+					<li>.alert-danger(Rojo)</li>
+					<li>.alert-primary(Azul)</li>
+					<li>.alert-secondary(Gris)</li>
+					<li>.alert-light(Transparente)</li>
+					<li>.alert-dark.(Negro/Gris)</li>
+				</ul>
+				<div class="alert alert-success">
+					<strong>Success </strong>Este cuadro de alerta indica una accion positiva o exitosa
+				</div>
+				<p><pre>
+&lt;div class="alert alert-success"&gt;
+	&lt;strong&gt;Success &lt;/strong&gt;Este cuadro de alerta indica una accion positiva o exitosa
+&lt;/div&gt;
+				</pre></p>
+				<br>
+				<h5>Enlaces dentro de Alertas</h5>
+				<p>Podemos agregar enlaces dentro de un cuadro de alerta mediante la clase <strong class="clase">.alert-link</strong>, creándose enlaces de colores coincidentes.</p>
+				<div class="alert alert-danger">
+					<strong>Peligro </strong>Cuidado con el contenido.
+					<a href="#" class="alert-link">Pinche aqui para mas detalles</a>
+				</div>
+				<p><pre>
+&lt;div class="alert alert-danger"&gt;
+	&lt;strong&gt;Peligro &lt;/strong&gt;Cuidado con el contenido.
+	&lt;a href="#" class="alert-link"&gt;Pinche aqui para mas detalles&lt;/a&gt;
+&lt;/div&gt;
+				</pre></p>
+				<br>
+				<h5>Cerrar Mensaje Alerta [X]</h5>
+				<p>Paracerrar un mensaje de alerta, debemos añadir la clase <strong>.alert-dismissibleal</strong> contenedorde  alertas  y  definir  un elemento tipo  botón  o  link  al  que agregamos  las  propiedades <strong>class=“close” y data-dismiss=“alert”</strong>. El   cuadro de alerta desaparecerá cuando hagamosclick sobre este elemento (en HTML suele utilizarse el   icono&times; (×) para los botones decierre, en lugar de la letra “x”). </p>
+				<div class="alert alert-success alert-dismissible">
+				<button type="button" class="close" data-dismiss="alert">&times;</button>
+					<p>Haz click sobre el simbolo "x" a la derecha para cerrarme</p>
+				</div>
+				<p><pre>
+&lt;div class="alert alert-success alert-dismissible"&gt;
+	&lt;button type="button" class="close" data-dismiss="alert"&gt;&times;&lt;/button&gt;
+	Haz click sobre el simbolo "x" a la derecha para cerrarme
+&lt;/div&gt;
+				</pre></p>
+				<hr>
+				<div id="Insignias"></div>
+				<h4>Insignias(badgets)</h4>
+				<p>Se   utilizan   para   agregar   información   adicional   a   cualquier   contenido (encabezados, botones, enlaces</p>
+				<p>Bootstrap define la clase <strong>.badge</strong> que se utiliza dentro de un elemento &lt;span> seguida deuna de las clases contextuales. Podemos ver a continuación un ejemplo deinsignias junto a encabezados delH1</p>
+				<h1>Encabezado H1 <span class="badge badge-secondary">Etiqueta</span></h1>
+				<h6>Encabezado H6 <span class="badge badge-primary">Etiqueta</span></h6>
+				<p>Podemos usar cualquiera de las clases contextuales (.badget-*) para dar <strong>color</strong> a la insignia</p>
+				<p><pre>
+&lt;h1&gt;Encabezado H1 &lt;span class="badge badge-secondary"&gt;Etiqueta&lt;/span&gt;&lt;/h1&gt;
+&lt;h6&gt;Encabezado H6 &lt;span class="badge badge-primary"&gt;Etiqueta&lt;/span&gt;&lt;/h6&gt;
+				</pre></p>
+				<h5>Redondear</h5>
+				<p>Añadir la clase <strong>.badge-pill</strong>:</p>
+				<h3>Encabezado <span class="badge badge-pill badge-primary">Primary</span></h3>
+				<h3>Encabezado <span class="badge badge-pill badge-dark">Dark</span></h3>
+				<p><pre>
+&lt;h3&gt;Encabezado &lt;span class="badge badge-pill badge-primary"&gt;Primary&lt;/span&gt;&lt;/h3&gt;
+&lt;h3&gt;Encabezado &lt;span class="badge badge-pill badge-dark"&gt;Dark&lt;/span&gt;&lt;/h3&gt;
+				</pre></p>
+				<h5>Insignia Dentro de Boton</h5>
+				<button type="button" class="btn btn-primary">
+					Mensajes <span class="badge badge-light">12</span>
+				</button>
+				<button type="button" class="btn btn-outline-secondary">
+					Notificaciones <span class="badge badge-light">8</span>
+				</button>
+				<p><pre>
+&lt;button type="button" class="btn btn-primary"&gt;
+	Mensajes &lt;span class="badge badge-light"&gt;12&lt;/span&gt;
+&lt;/button&gt;
+&lt;button type="button" class="btn btn-outline-secondary"&gt;
+	Notificaciones &lt;span class="badge badge-light"&gt;8&lt;/span&gt;
+&lt;/button&gt;
+				</pre></p>
+				<h5>Insignia con Enlace</h5>
+				<a href="#" class="badge badge-warning">Warning</a>
+				<a href="#" class="badge badge-pill badge-info">Info</a>
+				<p><pre>
+&lt;a href="#" class="badge badge-warning"&gt;Warning&lt;/a&gt;
+&lt;a href="#" class="badge badge-pill badge-info"&gt;Info&lt;/a&gt;
+				</pre></p>
+				<br>
+				<hr>
+				<br>
+				<div id="Cards"></div>
+				<h4>Cards</h4>
+				<p>Una  tarjeta  o card  es    una  caja  bordeada  con  algo  de  relleno alrededor  de  su  contenido.Incluye opciones para encabezados, pies de página, contenido, colores, etc.</p>
+				<p>Para  crear  una  tarjeta  básica  utilizaremos  la  clase <strong>.card</strong>,  y  para  el    contenido dentro  de  la tarjeta, la clase <strong>card-body:</strong>.</p>
+				<p>La  clase <strong>card-header</strong> añade  un header  a  la  tarjeta,  y  la  clase <strong>.card-footer</strong> añade  un footer</p>
+				<div class="card">
+					<div class="card-header">Header</div>
+					<div class="card-body">Contenido</div>
+					<div class="card-footer">Footer</div>
+				</div>
+				<p><pre>
+&lt;div class="card"&gt;
+	&lt;div class="card-header"&gt;Header&lt;/div&gt;
+	&lt;div class="card-body"&gt;Contenido&lt;/div&gt;
+	&lt;div class="card-footer"&gt;Footer&lt;/div&gt;
+&lt;/div&gt;
+				</pre></p>
+				<h5>Añadir Color</h5>
+				<p>Para añadir un color de fondo a la tarjeta, usamos las clases contextuales: <strong>bg-primary, .bg-success, .bg-info, .bg-warning, .bg-danger,.bg-secondary, .bg-dark, .bg-light.</strong>.</p>
+				<div class="card">
+					<div class="card bg-primary text-white mb-3">
+						<div class="card-body">Primary card</div>
+					</div>
+					<div class="card bg-dark text-white mb-3">
+						<div class="card-body">Dark card</div>
+					</div>
+					<div class="card bg-light text-dark mb-3">
+						<div class="card-body">Light card</div>
+					</div>
+				</div>
+				<p><pre>
+&lt;div class="card"&gt;
+	&lt;div class="card bg-primary text-white mb-3"&gt;
+		&lt;div class="card-body"&gt;Primary card&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="card bg-dark text-white mb-3"&gt;
+		&lt;div class="card-body"&gt;Dark card&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="card bg-light text-dark mb-3"&gt;
+		&lt;div class="card-body"&gt;Light card&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+				</pre></p>
+				<br>
+				<h5>Añadir Titulo, Texto y Enlace</h5>
+				<ul>
+					<li>.card-title: para agregar títulos (a modo de encabezado)</li>
+					<li>.card-text: para definir textos dentro de lacard.</li>
+					<li>.card-link: para definir un enlace (añade el característico color azul y el   efectohover).</li>
+				</ul>
+				<div class="card-body">
+					<h4 class="card-title">Titulo</h4>
+					<p class="card-text">Ejemplo de texto. Puedes escribir lo que quieras</p>
+					<a href="#" class="card-link">Card link</a>
+					<a href="#" class="card-link">Otro link</a>
+				</div>
+				<p><pre>
+&lt;div class="card-body"&gt;
+	&lt;h4 class="card-title"&gt;Titulo&lt;/h4&gt;
+	&lt;p class="card-text"&gt;Ejemplo de texto. Puedes escribir lo que quieras&lt;/p&gt;
+	&lt;a href="#" class="card-link"&gt;Card link&lt;/a&gt;
+	&lt;a href="#" class="card-link"&gt;Otro link&lt;/a&gt;
+&lt;/div&gt;
+				</pre></p>
+				<div id="CardsExtras"></div>
+				<h5>Incluir Imagenes</h5>
+				<p>Podemos incluir imágenes en unacard mediante las <strong>clases .card-img-top y .card-img-bottom</strong> </p>
+				<p>Ejemplo card-img-top</p>
+				<div class="card" style="width: 300px">
+					<img class="card-img-top" src="img/avatar2.jpg" alt="Juan Lopez" style="width: 300px">
+					<div class="card-body">
+						<h4 class="card-title">Juan Lopez</h4>
+						<p class="card-text">Desarrollador web. Experto en HTML, CSS, Javascript y Bootstrap</p>
+						<a href="#" class="btn btn-primary">Ver perfil</a>
+					</div>
+				</div>
+				<p><pre>
+&lt;div class="card" style="width: 300px"&gt;
+	&lt;img class="card-img-top" src="img/avatar2.jpg" alt="Juan Lopez" style="width: 300px"&gt;
+	&lt;div class="card-body"&gt;
+		&lt;h4 class="card-title"&gt;Juan Lopez&lt;/h4&gt;
+		&lt;p class="card-text"&gt;Desarrollador web. Experto en HTML, CSS, Javascript y Bootstrap&lt;/p&gt;
+		&lt;a href="#" class="btn btn-primary"&gt;Ver perfil&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+				</pre></p>
+				<p>Centrado</p>
+				<div class="card" style="width: 300px">
+					<img class="card-img-top" src="img/avatar3.jpg" alt="Programador" style="width: 100%">
+					<div class="card-body text-center">
+						<h4 class="card-title">Antonio Gonzalez</h4>
+						<p class="card-text">Desarrollador web. Experto en HTML, CSS, Javascript y Bootstrap</p>
+						<a href="#" class="btn btn-primary">Ver perfil</a>
+					</div>
+				</div>
+				<p><pre>
+&lt;div class="card" style="width: 300px"&gt;
+	&lt;img class="card-img-top" src="img/avatar3.jpg" alt="Programador" style="width: 100%"&gt;
+	&lt;div class="card-body text-center"&gt;
+		&lt;h4 class="card-title"&gt;Antonio Gonzalez&lt;/h4&gt;
+		&lt;p class="card-text"&gt;Desarrollador web. Experto en HTML, CSS, Javascript y Bootstrap&lt;/p&gt;
+		&lt;a href="#" class="btn btn-primary"&gt;Ver perfil&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+				</pre></p>
+				<p><strong>Para el card-img-bottom definiriamos primero el cuerpo card-body y despues la imagen con la clase class="card-img-bottom"</strong></p>
+				<br>
+				<h5>Hacer un Enlace de la Tarjeta(Cards)</h5>
+				<p>Podemos  añadir  la  clase .stretched-link  a  un enlacedentro de la tarjeta para hacer que toda la tarjeta seacliqueable ( la tarjeta actuará como un enlace)</p>
+				<div class="card" style="width: 750px">
+					<img class="card-img-top" src="img/cesvg.jpg" alt="CES VEGA MEDIA" style="width: 750px">
+					<div class="card-body text-justify">
+						<h4 class="card-title">CES Vega Media</h4>
+						<p class="card-text text-muted">Centro de enseñanza concertada</p>
+						<p class="card-text">Educacion infantil y primaria, ESO,FP Basica(Servicios Administrativos),Ciclos formativos de grado medio(Gestion administrativa, Cuidados auxiliares de enfermeria, Instalaciones electricas y automaticas) y Ciclos formativos de superior(Educacion infantil, DAW)</p>
+						<a href="https://www.ces-vegamedia.es/" class="btn btn-primary btn-block stretched-link">Ir al sitio web</a>
+					</div>
+				</div>
+				<p><pre>
+&lt;div class="card" style="width: 750px"&gt;
+	&lt;img class="card-img-top" src="img/cesvg.jpg" alt="CES VEGA MEDIA" style="width: 750px"&gt;
+	&lt;div class="card-body text-justify"&gt;
+		&lt;h4 class="card-title"&gt;CES Vega Media&lt;/h4&gt;
+		&lt;p class="card-text text-muted"&gt;Centro de enseñanza concertada&lt;/p&gt;
+		&lt;p class="card-text"&gt;Educacion infantil y primaria, ESO,FP Basica(Servicios Administrativos),Ciclos formativos de grado medio&lt;/p&gt;
+		&lt;a href="https://www.ces-vegamedia.es/" class="btn btn-primary btn-block stretched-link"&gt;Ir al sitio web&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+				</pre></p>
+				<div id="CardsGrupos"></div>
+				<h5>Grupos de tarjetas</h5>
+				<p> <strong>.card-colums</strong> , que crea unacuadrícula de tarjetas. El   diseño se ajustará automáticamente a medida que se inserten máscards.</p>
+				<p>Para pantallas pequeñas (de menos de 576 pixel) las tarjetas se mostrarán verticalmente</p>
+				<div class="card-columns">
+					<div class="card bg-primary">
+						<div class="card-body text-center">
+							<p class="card-text">Texto dentro de la card nº1</p>
+						</div>
+					</div>
+					<div class="card bg-warning">
+						<div class="card-body text-center">
+							<p class="card-text">Texto dentro de la card nº2</p>
+						</div>
+					</div>
+					<div class="card bg-success">
+						<div class="card-body text-center">
+							<p class="card-text">Texto dentro de la card nº3</p>
+						</div>
+					</div>
+				</div>
+				<p><pre>
+&lt;div class="card-columns"&gt;
+	&lt;div class="card bg-primary"&gt;
+		&lt;div class="card-body text-center"&gt;
+			&lt;p class="card-text"&gt;Texto dentro de la card nº1&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="card bg-warning"&gt;
+		&lt;div class="card-body text-center"&gt;
+			&lt;p class="card-text"&gt;Texto dentro de la card nº2&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="card bg-success"&gt;
+		&lt;div class="card-body text-center"&gt;
+			&lt;p class="card-text"&gt;Texto dentro de la card nº3&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+				</pre></p>
+				<p>Si    queremos  que  en  la  cuadrícula  todas  las  tarjetas  tengan  la   misma  altura  y  anchura,utilizaremos la clase <strong>.card-deck</strong> .</p>
+				<p>Tomara como referencia lo que ocupe el texto o contenido de la mayor</p>
+				<div class="card-deck">
+					<div class="card bg-primary">
+						<div class="card-body text-center">
+							<p class="card-text">Texto dentro de la card nº1</p>
+						</div>
+					</div>
+					<div class="card bg-warning">
+						<div class="card-body text-center">
+							<p class="card-text">Texto dentro de la card nº2</p>
+						</div>
+					</div>
+					<div class="card bg-success">
+						<div class="card-body text-center">
+							<p class="card-text">Texto dentro de la card nº3</p>
+						</div>
+					</div>
+					<div class="card bg-danger">
+						<div class="card-body text-center">
+							<p class="card-text">Texto dentro de la card nº4</p>
+						</div>
+					</div>
+					<div class="card bg-light">
+						<div class="card-body text-center">
+							<p class="card-text">Texto dentro de la card nº5</p>
+						</div>
+					</div>
+					<div class="card bg-info">
+						<div class="card-body text-center">
+							<p class="card-text">Texto.</p>
+						</div>
+					</div>
+				</div>
+				<p>Codigo de una sola columna</p>
+				<p><pre>
+&lt;div class="card-deck"&gt;
+	&lt;div class="card bg-primary"&gt;
+		&lt;div class="card-body text-center"&gt;
+			&lt;p class="card-text"&gt;Texto dentro de la card nº1&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+				</pre></p>
+				<br>
+				<p>La  clase <strong>.card-group</strong> es similar a .card-deck.  La  única  diferencia  es    que  la  clase <strong>.card-group</strong>  elimina los márgenes izquierdo y derecho entre cada tarjeta</p>
+				<p>Las  tarjetas  se  muestran  verticalmente  en  pantallas  pequeñas  (menos  de  576  pixel),  conmargen superior e inferior (este margen no se elimina)</p>
+				<div class="card-group">
+					<div class="card bg-primary">
+						<div class="card-body text-center">
+							<p class="card-text">Texto dentro de la card nº1</p>
+						</div>
+					</div>
+					<div class="card bg-warning">
+						<div class="card-body text-center">
+							<p class="card-text">Texto dentro de la card nº2</p>
+						</div>
+					</div>
+					<div class="card bg-success">
+						<div class="card-body text-center">
+							<p class="card-text">Texto dentro de la card nº3</p>
+						</div>
+					</div>
+					<div class="card bg-danger">
+						<div class="card-body text-center">
+							<p class="card-text">Texto dentro de la card nº4</p>
+						</div>
+					</div>
+					<div class="card bg-light">
+						<div class="card-body text-center">
+							<p class="card-text">Texto dentro de la card nº5</p>
+						</div>
+					</div>
+					<div class="card bg-info">
+						<div class="card-body text-center">
+							<p class="card-text">Texto </p>
+						</div>
+					</div>
+				</div>
+				<br>
+				<hr>
+				<br>
+				<div id="Collapse"></div>
+				<h4>Collapse</h4>
+				<p>Los  elementos  de  tipo  plegable  o collapse  son  útiles  cuando  queremos  ocultar  o  mostraruna  gran  cantidad  de  contenido.Bootstrap  define  la  clase .collapsepara  crear  elementosplegables y cuyo contenido se mostrará u ocultará con solo hacerclic en un botón.</p>
+				<p>Para  crear  mostrar/ocultar  contenido  contraíble  <strong>(se encuentra dentro de un &lt;div>)</strong> , podemos utilizar tanto un elemento <strong>&lt;a></strong> comoun elemento <strong>&lt;button></strong> ,  al  que  añadiremos  el    atributo <strong>data-toggle=“collapse”</strong> .  Luego debemos  conectar  estos  elementos  con  el    contenido plegable  (a  través  de  un <strong>id </strong> que  se asigna al <strong>&lt;div></strong> donde está el   contenido), en el   caso de <strong>botonescon el   atributo data-target y para enlaces con el   atributo href</strong> .</p>
+				<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#plegable1">Plegable boton</button>
+				<div id="plegable1" class="collapse">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+				</div>
+				<button href="#plegable2" class="btn btn-primary" data-toggle="collapse">Plegable enlace</button>
+				<div id="plegable2" class="collapse show">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+				</div>
+				<p>Por  defecto,  el    contenido  plegable  está  oculto.  Agregando  la   clase <strong>.show</strong> podemos  hacerque el contenido se muestre de manera predeterminada:</p>
+				<p><pre>
+&lt;button type="button" class="btn btn-primary" <strong>data-toggle="collapse"</strong> <strong class="clase">data-target="#plegable1"</strong> &gt;Plegable boton&lt;/button&gt;
+&lt;div id="<strong class="clase"> plegable1 </strong>" class=" <strong>collapse</strong>"&gt;
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+&lt;/div&gt;
+&lt;button href="#plegable2" class="btn btn-primary" data-toggle="collapse"&gt;Plegable enlace&lt;/button&gt;
+&lt;div id="plegable2" class="collapse <strong>show</strong>"&gt;
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+&lt;/div&gt;
+				</pre></p>
+				<div id="Acordeon"></div>
+				<h4>Acordeon</h4>
+				<p>Un  caso  especial  de  elementoscollapse  son  los  elementos  de  tipoacordeón(accordion), que se implementan concards.  Cuando se muestre uno de los elementos plegables, el   restose cerrarán</p>
+				<div id="accordion">
+					<div class="card">
+						<div class="card-header">
+							<a class="card-link" data-toggle="collapse" href="#plegableUNO">
+								Contenido UNO
+							</a>
+						<div id="plegableUNO" class="collapse show" data-parent="#accordion">
+							<div class="card-body">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, corporis, minus! Sapiente ut inventore explicabo est consequatur natus beatae officia ex nihil atque at cum, voluptatibus nostrum. Quisquam, optio earum.
+							</div>
+						</div>
+						</div>
+					</div>
+					
+					<div class="card">
+						<div class="card-header">
+							<a class="card-link" data-toggle="collapse" href="#plegableDOS">
+								Contenido DOS
+							</a>
+						<div id="plegableDOS" class="collapse" data-parent="#accordion">
+							<div class="card-body">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam aut nulla laborum eveniet labore sunt recusandae, iste tenetur necessitatibus distinctio consequuntur impedit animi commodi reprehenderit quo molestiae libero, rerum laudantium.
+							</div>
+						</div>
+						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-header">
+							<a class="card-link" data-toggle="collapse" href="#plegableTRES">
+								Contenido TRES
+							</a>
+						<div id="plegableTRES" class="collapse" data-parent="#accordion">
+							<div class="card-body">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam minima autem dolorum. Inventore minima ut quo facilis culpa doloribus. Repudiandae, voluptas inventore neque nesciunt non vero, odit illo tenetur in?
+							</div>
+						</div>
+						</div>
+					</div>
+				</div>
+				<p>Codigo de una de las 3 tarjetas desplegables:</p>
+				<p><pre>
+&lt;div <strong>class="card"</strong>&gt;
+	&lt;div class="card-header"&gt;
+		&lt;a class="card-link" data-toggle="collapse" href="#plegableUNO"&gt;
+			Contenido UNO
+		&lt;/a&gt;
+	&lt;div id="plegableUNO" class="collapse show"<strong>data-parent="#accordion"</strong> &gt;
+		&lt;div class="card-body"&gt;
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, corporis,
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+				</pre></p>
+				<br>
+				<hr>
+				<br>
+				<div id="Carousel"></div>
+				<h4>Carousel</h4>
+				<p>Uncarousel  es  una  presentación  (slideshow)  de  imágenes  que  se  van  mostrando  de  formacíclica (después de la última volverá a mostrarse la primera)</p>
+				<p>Contenedor:</p>
+				<p>Un carousel se define con la clase <strong>“.carousel slide”</strong></p>
+				<p><code>&lt;div class="carousel slide" id="ejemplo-carousel" data-ride="carousel"&gt;&lt;/div&gt;</code></p>
+				<ul>
+					<li>Una primera parte (obligatoria) que contiene las imágenes que forman la presentación.</li>
+					<p><strong>clases  “.carousel-inner”  para  el    contenedor  y  “.carousel-item”  para  cada  una  de  las  imágenes</strong></p>
+					<p><strong>   atributo “active”. </strong> </p>
+					<p>Atención a los tamaños de las imágenes. Podemos utilizar los atributos height y width para indicar el alto y ancho con que queremos que se muestre.</p>
+					<p>También podemos hacer uso de la clase “img-fluid” para hacer nuestra web responsive.</p>
+					<p><pre>
+&lt;div class="carousel-inner"&gt;
+	&lt;div class="carousel-item active"&gt;
+		&lt;img src="./img/banner.jpg" alt="Imagen1" class="img-fluid" width="100%"&gt;
+	&lt;/div&gt;
+	&lt;div class="carousel-item "&gt;
+		&lt;img src="./img/banner2.jpg" alt="Imagen2" class="img-fluid" width="100%"&gt;
+	&lt;/div&gt;
+	&lt;div class="carousel-item "&gt;
+		&lt;img src="./img/banner3.jpg" alt="Imagen3" class="img-fluid" width="100%"&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+					</pre></p>
+					<li>Una segunda parte (obligatoria) con los controles que  nos permite desplazarnos hacia la  izquierda y derecha. </li>
+					<p><strong>izquierda  (clase  “.carousel-control-prev”)  y  derecha  (clase  “.carousel-control-next”).</strong></p>
+					<p><pre>
+&lt;a class="carousel-control-prev" href="#ejemplo-carousel" data-slide="prev"&gt;
+	&lt;span class="carousel-control-prev-icon"&gt;&lt;/span&gt;
+&lt;/a&gt;
+&lt;a class="carousel-control-next" href="#ejemplo-carousel" data-slide="next"&gt;
+	&lt;span class="carousel-control-next-icon"&gt;&lt;/span&gt;
+&lt;/a&gt;
+					</pre></p>
+					<li>Una  tercera  parte  (opcional) con  los  indicadores  de  las  imágenes  para  saber  por  cuál  delas imágenes vamos. </li>
+					<p><pre>
+&lt;ul class="carousel-indicators"&gt;
+	&lt;li data-target="#ejemplo-carousel" data-slide-to="0" class="active"&gt;&lt;/li&gt;
+	&lt;li data-target="#ejemplo-carousel" data-slide-to="1"&gt;&lt;/li&gt;
+	&lt;li data-target="#ejemplo-carousel" data-slide-to="2"&gt;&lt;/li&gt;
+&lt;/ul&gt;
+					</pre></p>
+				</ul>
+				<p>Y podemos añadir un título a cada imagen haciendo uso de la clase <strong>.carousel-caption</strong> </p>
+				<p><pre>
+&lt;div class="carousel-item active"&gt;
+	&lt;img src="./img/banner.jpg" alt="Imagen1" class="img-fluid" width="100%"&gt;
+	&lt;div class="carousel-caption"&gt;
+		&lt;h4&gt;Titulo&lt;/h4&gt;
+		&lt;p&gt;Texto....&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+				</pre></p>
+				<div id="Modal"></div>
+				<h4>Ventana Modal</h4>
+				<p>Un  componentemodal  es    una  ventana  o  cuadro  de  diálogo  que  permanece  oculta  cuandose visualiza la página en el navegador y se muestra al pulsar sobre un enlace o un botón</p>
+				<p>Lo más importante del código para la ventana Modal es que el <strong>DIV</strong>  principal (con clase “.<strong>modal</strong>”) tenga un <strong>ID</strong> (en el ejemplo, “<strong>myModal</strong>”).
+
+El botón que muestra la ventana Modal es un botón normal al que debemos añadir los atributos “<strong>data-toggle</strong>” y “<strong>data-target</strong>”, este último es el más importante, porque le asignamos el <strong>valor del nombre que le hemos dado al ID del DIV principal de la ventana Modal</strong>.</p>
+<!--Boton para Abrir el modal-->
+				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Abrir Modal</button>
+				<!--Ventana Modal-->
+				<div class="modal fade" id="myModal">
+					<div class="modal-dialog modal-xl">
+						<div class="modal-content">
+							
+							<!--Modal header-->
+							<div class="modal-header">
+								<h4 class="modal-title">Titulo del Modal</h4>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<!--Modal Body-->
+							<div class="modal-body">
+								<p>Contenido del Modal</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+							</div>
+
+							<!--Modal footer-->
+							<div class="modal-footer">
+								<button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<p><pre>
+&lt;!--Boton para Abrir el modal--&gt;
+&lt;button type="button" class="btn btn-primary" <strong>data-toggle="modal" data-target="#myModal"</strong>&gt;Abrir Modal&lt;/button&gt;
+&lt;!--Ventana Modal--&gt;
+&lt;div <strong>class="modal fade" id="myModal"</strong>&gt;
+	&lt;div class="modal-dialog <strong>modal-xl</strong>"&gt;
+		&lt;div class="<strong>modal-content</strong>"&gt;
+			
+			&lt;!--Modal header--&gt;
+			&lt;div class="<strong>modal-header</strong>"&gt;
+				&lt;h4 class="modal-title"&gt;Titulo del Modal&lt;/h4&gt;
+				&lt;button type="button" class="close" data-dismiss="modal"&gt;&times;&lt;/button&gt;
+			&lt;/div&gt;
+			&lt;!--Modal Body--&gt;
+			&lt;div class="<strong>modal-body</strong>"&gt;
+				&lt;p&gt;Contenido del Modal&lt;/p&gt;
+				&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit...&lt;/p&gt;
+			&lt;/div&gt;
+			&lt;!--Modal footer--&gt;
+			&lt;div class="<strong>modal-footer</strong>"&gt;
+				&lt;button type="button" class="btn btn-danger" data-dismiss="modal"&gt;Cerrar&lt;/button&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+				</pre></p>
+				<p>Podemos añadir un efecto de desvanecimiento al abrir y cerrar la ventana modal usando la  clase <strong>.fade</strong>:</p>
+				<p>Ta m b i é n  podemos  cambiar  el    tamaño  del  modal  añadiendo  las  clases <strong>.modal-sm</strong>  (para modales  pequeños),<strong>.modal-lg</strong> (para  modales  grandes)  o <strong>.modal-xl</strong> (para  modales  extragrandes) al elemento<strong>&lt;div> con la clase .modal-dialog:</strong> </p>
+				<p><pre>
+&lt;div <strong>class="modal fade" id="myModal"</strong>&gt;
+	&lt;div class="modal-dialog <strong>modal-xl</strong>"&gt;
+				</pre></p>
+				<p>Si   queremos centrar el   modal vertical y horizontalmente dentro de la página, podemos usarla clase <strong>.modal-dialog-centered</strong></p>
+				<p><pre>
+&lt;div <strong>class="modal fade" id="myModal"</strong>&gt;
+	&lt;div class="modal-dialog <strong>modal-dialog-centered</strong>"&gt;
+				</pre></p>
+				<p>Cuando   nuestra   ventana   modal   tiene   mucho   contenido,   se   agregará una   barra   dedesplazamiento (scrollbar)  a  la  página.  Sin  embargo,  es    posible  desplazarse  solo  dentro  delmodal en lugar de la página, añadiendo la clase <strong>.modal-dialog-scrollable</strong></p>
+				<p><pre>
+&lt;div <strong>class="modal fade" id="myModal"</strong>&gt;
+	&lt;div class="modal-dialog <strong>modal-dialog-scrollable</strong>"&gt;
+				</pre></p>
+
+				
+				
+				
+
+
+			</div>
+		</div>
+	</div>
+	
+
+<script src="./js/jquery-3.4.1.min.js"></script>
+<script src="./js/popper.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+</body>
+</html>

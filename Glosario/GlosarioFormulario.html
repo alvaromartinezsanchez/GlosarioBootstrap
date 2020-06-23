@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=devide-width, initial-scale=1, shrinkto-fit=no">
+	<link rel="stylesheet" href="./css/bootstrap.min.css" type="text/css">
+	<title>Formulario</title>
+</head>
+<style>
+        body{
+            margin: 10px 50px;
+        }
+        h4 { color: blue; }
+        h5{ color: rgba(8, 189, 235, 0.692);}
+        strong{ color: rgba(115, 165, 19, 0.747); }
+        .clase{color: crimson;}
+        .barra{
+            margin-bottom: 50px;
+        }
+    </style>
+<body>
+    <div class="container">
+        <div class="row barra">
+    <div class="col">
+        <!--Enlaces-->
+    <nav class="navbar fixed-top navbar-expand-sm bg-dark ">
+        <!--Enlaces-->
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="navbardorp" data-toggle="dropdown">Gird</a>
+                <div class="dropdown-menu">
+                    <a href="GlosarioGird.html#Tama" class="dropdown-item nav-link">Tamaños</a>
+                    <a href="GlosarioGird.html#Alineacion" class="dropdown-item nav-link">Alineacion</a>
+                    <a href="GlosarioGird.html#Otros" class="dropdown-item nav-link">Otros</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="navbardorp" data-toggle="dropdown">Tipografia</a>
+                <div class="dropdown-menu">
+                    <a href="GlosarioTipografia.html#Encabezados" class="dropdown-item nav-link">Encabezados</a>
+                    <a href="GlosarioTipografia.html#Alineacion" class="dropdown-item nav-link">Alineacion</a>
+                    <a href="GlosarioTipografia.html#Conversiones" class="dropdown-item nav-link">Conversiones</a>
+                    <a href="GlosarioTipografia.html#Blockquote" class="dropdown-item nav-link">Blockquote</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="navbardorp" data-toggle="dropdown">Componentes 1</a>
+                <div class="dropdown-menu">
+                    <a href="GlosarioComponentes1.html#Imagenes" class="dropdown-item nav-link">Imagenes</a>
+                    <a href="GlosarioComponentes1.html#Tablas" class="dropdown-item nav-link">Tablas</a>
+                    <a href="GlosarioComponentes1.html#BloquesCodigo" class="dropdown-item nav-link">Bloques Codigo</a>
+                    <a href="GlosarioComponentes1.html#MediaObjet" class="dropdown-item nav-link">Media Objet</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="navbardorp" data-toggle="dropdown">Componentes2</a>
+                <div class="dropdown-menu">
+                    <a href="GlosarioComponentes3.html#Alertas" class="dropdown-item nav-link">Alertas</a>
+                    <a href="GlosarioComponentes3.html#Insignias" class="dropdown-item nav-link">Insignias</a>
+                    <a href="GlosarioComponentes3.html#Cards" class="dropdown-item nav-link">Cards</a>
+                    <a href="GlosarioComponentes3.html#CardsExtras" class="dropdown-item nav-link">CardEsxtras</a>
+                    <a href="GlosarioComponentes3.html#CardsGrupos" class="dropdown-item nav-link">CardsGrupos</a>
+                    <a href="GlosarioComponentes3.html#Collapse" class="dropdown-item nav-link">Collapse</a>
+                    <a href="GlosarioComponentes3.html#Acordeon" class="dropdown-item nav-link">Acordeon</a>
+                    <a href="GlosarioComponentes3.html#Modal" class="dropdown-item nav-link">Modal</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="navbardorp" data-toggle="dropdown">Botones</a>
+                <div class="dropdown-menu">
+                    <a href="GlosarioBotones.html#Estilos" class="dropdown-item nav-link">Estilos</a>
+                    <a href="GlosarioBotones.html#GruposBotones" class="dropdown-item nav-link">GruposBotones</a>
+                    <a href="GlosarioBotones.html#Checkbox" class="dropdown-item nav-link">Checkbox</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="navbardorp" data-toggle="dropdown">Desplegables</a>
+                <div class="dropdown-menu">
+                    <a href="GlosarioDesplegables.html#Desplegables" class="dropdown-item nav-link">Desplegables</a>
+                    <a href="GlosarioDesplegables.html#Alineacion" class="dropdown-item nav-link">Alineacion</a>
+                    <a href="GlosarioDesplegables.html#GruposBotones" class="dropdown-item nav-link">GruposBotones</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="navbardorp" data-toggle="dropdown">Formularios</a>
+                <div class="dropdown-menu">
+                    <a href="GlosarioFormulario.html#Estructura" class="dropdown-item nav-link">Estructura</a>
+                    <a href="GlosarioFormulario.html#EnLinea" class="dropdown-item nav-link">EnLinea</a>
+                    <a href="GlosarioFormulario.html#Horizontal" class="dropdown-item nav-link">Horizontal</a>
+                    <a href="GlosarioFormulario.html#CuadrosAyuda" class="dropdown-item nav-link">CuadrosAyuda</a>
+                    <a href="GlosarioFormulario.html#Validacion" class="dropdown-item nav-link">Validacion</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="navbardorp" data-toggle="dropdown">Input</a>
+                <div class="dropdown-menu">
+                    <a href="GlosarioInput.html#Texto" class="dropdown-item nav-link">Texto</a>
+                    <a href="GlosarioInput.html#Select" class="dropdown-item nav-link">Select</a>
+                    <a href="GlosarioInput.html#RadioButton" class="dropdown-item nav-link">RadioButton</a>
+                    <a href="GlosarioInput.html#Checkbox" class="dropdown-item nav-link">Checkbox</a>
+                    <a href="GlosarioInput.html#Tamaños" class="dropdown-item nav-link">Tamaños</a>
+                    <a href="GlosarioInput.html#Agrupaciones" class="dropdown-item nav-link">Agrupaciones</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="navbardorp" data-toggle="dropdown">Navegacion</a>
+                <div class="dropdown-menu">
+                    <a href="GlosarioNavegacion.html#MenuBasico" class="dropdown-item nav-link">MenuBasico</a>
+                    <a href="GlosarioNavegacion.html#Pestañas" class="dropdown-item nav-link">Pestañas</a>
+                    <a href="GlosarioNavegacion.html#Boton" class="dropdown-item nav-link">Boton</a>
+                    <a href="GlosarioNavegacion.html#Justificado" class="dropdown-item nav-link">Justificado</a>
+                    <a href="GlosarioNavegacion.html#Desplegable" class="dropdown-item nav-link">Desplegable</a>
+                    <a href="GlosarioNavegacion.html#Dinamicos" class="dropdown-item nav-link">Dinamicos</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="navbardorp" data-toggle="dropdown">BarraNavegacion</a>
+                <div class="dropdown-menu">
+                    <a href="GlosarioNavegacion.html#BarraNavegacion" class="dropdown-item nav-link">BarraNavegacion</a>
+                    <a href="GlosarioNavegacion.html#Color" class="dropdown-item nav-link">Color</a>
+                    <a href="GlosarioNavegacion.html#Logotipo" class="dropdown-item nav-link">Logotipo</a>
+                    <a href="GlosarioNavegacion.html#Desplegable" class="dropdown-item nav-link">Desplegable</a>
+                    <a href="GlosarioNavegacion.html#Formulario" class="dropdown-item nav-link">Formulario</a>
+                    <a href="GlosarioNavegacion.html#Plegable" class="dropdown-item nav-link">Plegable</a>
+                    <a href="GlosarioNavegacion.html#Anclaje" class="dropdown-item nav-link">Anclaje</a>
+                    <a href="GlosarioNavegacion.html#Contenedores" class="dropdown-item nav-link">Contenedores</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="navbardorp" data-toggle="dropdown">Html/Css</a>
+                <div class="dropdown-menu">
+                    <a href="GlosarioHTML.html" class="dropdown-item nav-link">Html</a>
+                    <a href="GlosarioCSS.html" class="dropdown-item nav-link">Css</a>
+                    <a href="GlosarioCSS3.html" class="dropdown-item nav-link">Css3</a>
+                </div>
+            </li>
+
+                    
+        </ul>
+    </nav>
+    </div>
+</div>
+        <div class="row">
+            <div class="col">
+                <h4>Formularios</h4>
+                <div id="Estructura"></div>
+                <h5>Estructura basica</h5>
+                <p>debemos crear un <strong>form</strong> , y dentro añadir una clase <strong>.form-group</strong> para cada uno de los elementos de nuestro formulario.</p>
+                <p>
+                <pre>
+                    &lt;<strong>form action</strong>=""&gt;
+                        &lt;div class="<strong>form-group</strong>"&gt;
+                            
+                        &lt;/div&gt;
+                    &lt;<strong>/form</strong>&gt;
+                </pre>
+                </p>
+                <hr>
+                <p>Para  permitir  que  Bootstrap  ajuste  correctamente el    espaciado,  cada  bloque  o  grupo  de  unformulario  (normalmente formado  por  una  etiqueta <strong>label</strong>   y  algún elemento de  entrada  dedatos  como  un <strong>input, textarea,</strong>   etc.)  tendrá  que  estar <strong> agrupado  por  una  caja  contenedoracon la clase .form-group</strong> . Además, <strong>a cada input se le tiene que aplicar la clase .form_control</strong> .</p>
+                <p>Formulario Vertical:</p>
+                <form action="">
+                        <div class="form-group">
+                            <label for="user">Login</label>
+                            <input type="text" class="form-control" id="user" placeholder="User">
+                        </div>
+                        <div class="form-group">
+                            <label for="passwd">Password</label>
+                            <input type="password" class="form-control" id="passwd" placeholder="Pass">
+                        </div>
+                        <button class="btn btn-primary" type="submit">Sign in</button>
+                    </form>
+                
+                <p>
+                    <pre>
+                    &lt;<strong>form action</strong>=""&gt;
+                        &lt;div class="<strong class="clase">form-group</strong>"&gt;
+                            &lt;label for="user"&gt;Login&lt;/label&gt;
+                            &lt;input type="text" class="<strong class="clase">form-control</strong>" id="user" placeholder="User"&gt;
+                        &lt;/div&gt;
+                         &lt;div class="<strong class="clase">form-group</strong>"&gt;
+                            &lt;label for="passwd">Password&lt;/label&gt;
+                            &lt;input type="password" class="<strong class="clase">form-control</strong>" id="passwd" placeholder="Pass"&gt;
+                        &lt;/div&gt;
+                        &lt;button class="btn btn-primary" type="submit">Sign in&lt;/button&gt;
+                    &lt;/form&gt;
+                    </pre>
+                </p>
+                <hr>
+                <div id="EnLinea"></div>
+                <h5>Formulario En Linea</h5>
+                <p>Con la clase<strong>.form-inline</strong> aplicado en la etiqueta <strong>form</strong> podemos crear formularios que se dispondrán en una sola línea. En caso de no caber mas elementos los añadira en la siguiente linea</p>
+                <form action="" class="form-inline">
+                    <div class="form-group">
+                        <label for="user">Login</label>
+                        <input type="text" class="form-control ml-2 mr-2" id="user" placeholder="User">
+                    </div>
+                    <div class="form-group">
+                        <label for="passwd">Password</label>
+                        <input type="password" class="form-control ml-2 mr-2" id="passwd" placeholder="Pass">
+                    </div>
+                    <button class="btn btn-primary" type="submit">Sign in</button>
+                </form>
+                <br>
+                <p>El codigo es igual que el de arriba pero añadiendo<strong> class="form-inline"</strong>  en la etiqueta <strong>form</strong></p>
+                <p>Ademas añadimos <strong>margenes (<strong class="clase">mr-2 y ml-2</strong>) a los imput y button</strong>  para que queden bien</p>
+                <p><code>&lt;<strong>form</strong> action="" <strong>class="form-inline"</strong> &gt;&lt;/form&gt;</code></p>
+                <div id="Horizontal"></div>
+                <h5>Formulario Horizontal <small class="text-muted">( Uso de filas para cada form-group y columnas de tamaño ajustable con datos) </small> </h5>
+                <p>Mediante el uso del sistema de rejilla de Bootstrap podemos crear formularios con disposición horizontal. Para esto tendremos que crear una fila (.row) por cada grupo, y situar la etiqueta input cada uno en una columna.</p>
+                <form action="">
+                    <div class="form-group row">
+                        <label class="col-2 col-form-label" for="user">Login</label>
+                        <div class="col-10">
+                            <input type="text" class="form-control" id="user" placeholder="User">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-2 col-form-label" for="passwd">Password</label>
+                        <div class="col-10">
+                            <input type="password" class="form-control" id="passwd" placeholder="Pass">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-2">Sign in</div>
+                        <div class="col-10">
+                            <button class="btn btn-primary" type="submit">Sign in</button>
+                        </div>
+                    </div>
+                </form>
+                <br>
+                <p>La etiqueta <strong class="clase">.row</strong> se añade al <strong class="clase">div</strong>  de cada grupo, manteniendo también la etiqueta <strong class="clase">.form-group</strong>. Además, podemos aplicar la clase de las<strong class="clase">columnas</strong>  para las<strong class="clase"> etiquetas label</strong> directamente sobre dicho elemento, sin necesidad de crear una caja contenedora.</p>
+                <p>
+                    <pre>
+                        &lt;form action=""&gt;
+                            &lt;div class="<strong class="clase">form-group row</strong>"&gt;
+                                &lt;label class="<strong class="clase">col-2 col-form-label</strong>" for="user"&gt;Login&lt;/label&gt;
+                                &lt;div class="<strong class="clase">col-10</strong>"&gt;
+                                    &lt;input type="text" class="form-control" id="user" placeholder="User"&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class="<strong class="clase">form-group row</strong>"&gt;
+                                &lt;label class="<strong class="clase">col-2 col-form-label</strong>" for="passwd"&gt;Password&lt;/label&gt;
+                                &lt;div class="<strong class="clase">col-10</strong>"&gt;
+                                    &lt;input type="password" class="form-control" id="passwd" placeholder="Pass"&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;div class="<strong class="clase">form-group row</strong>"&gt;
+                                &lt;div class="<strong class="clase">col-2</strong>"&gt;Sign in&lt;/div&gt;
+                                &lt;div class="<strong class="clase">col-10</strong>"&gt;
+                                    &lt;button class="btn btn-primary" type="submit"&gt;Sign in&lt;/button&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/form&gt;
+                    </pre>
+                </p>
+                <div id="CuadrosAyuda"></div>
+                <h5>Cuadros de Ayuda</h5>
+                <p>Son textos que suelen acompañar a los input para informar al usuario sobre lo que debe escribir en dicho input. Los podemos añadir utilizando la etiqueta <strong class="clase">small</strong> y las clases <strong class="clase">.form-text y .text-muted</strong>.</p>
+                <form action="">
+                    <div class="form-group">
+                    <label for="user">Usuario</label>
+                    <input type="text" class="form-control" id="user" placeholder="Nombre de Usuario">
+                    <small class="form-text text-muted">!!..Esto es un cuadro de ayuda.....¡¡¡¡¡¡¡¡¡¡¡</small>
+                </form>
+                </div>
+                <p>Codigo:</p>
+                <p>
+                    <pre>
+                        &lt;div class="form-group"&gt;
+                            &lt;label for="user"&gt;Usuario&lt;/label&gt;
+                            &lt;input type="text" class="form-control" id="user" placeholder="Nombre de Usuario"&gt;
+                            &lt;<strong>small class="form-text text-muted"&gt;!!..Esto es un cuadro de ayuda.....¡¡¡¡¡¡¡¡¡¡¡&lt;/small</strong> &gt;
+                        &lt;/div&gt;
+
+                    </pre>
+                </p>
+                <div id="Validacion"></div>
+                <h5>Validacion de Formularios</h5>
+                <p>Bootstrap  proporciona  clases, como  <strong class="clase">.was-validated</strong>,  que  ayudan a  la   validación  de  unformulario,  dando  al  usuario  información  (feedback)  sobre  los  campos  que  deben  ser completados antes de ser enviado. Los campos de entrada tendrán un borde verde (válido)o  rojo  (no  válido)  para  indicar  lo  que  falta  en  el    formulario.  Ta m b i é n  puede  visualizarse  un mensaje  utilizando  las  clases <strong class="clase">.valid-feedback o .invalid-feedback</strong> para  decirle  al  usuariolo que falta o debe hacerse antes de enviar el   formulario. </p>
+                <form action="" class="was-validated">
+                    <div class="form-group">
+                        <label for="user">Usuario</label>
+                        <input type="text" class="form-control" id="user" placeholder="Nombre de Usuario" required>
+                        <div class="valid-feedback">Valido</div>
+                        <div class="invalid-feedback">Por favor, rellene este campo</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="passwd">Contraseña</label>
+                        <input type="password" class="form-control" id="passwd" placeholder="Contraseña" required>
+                        <div class="valid-feedback">Valido</div>
+                        <div class="invalid-feedback">Por favor, rellene este campo</div>
+                    </div>
+                    <div class="form-group form-check">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" required>Acepto politicas de privacidad
+                            <div class="invalid-feedback">Marca esta casilla para continuar</div>
+                        </label>
+                    </div>
+                    <button class="btn btn-primary" type="submit">Entrar</button>
+                </form>
+                <p></p>
+                <p>
+                    <pre>
+                    &lt;form action="" class="<strong class="clase">was-validated</strong>"&gt;
+                        &lt;div class="form-group"&gt;
+                            &lt;label for="user"&gt;Usuario&lt;/label&gt;
+                            &lt;input type="text" class="form-control" id="user" placeholder="Nombre de Usuario" required&gt;
+                            &lt;div class="<strong class="clase">valid-feedback</strong>"&gt;Valido&lt;/div&gt;
+                            &lt;div class="<strong class="clase">invalid-feedback</strong>"&gt;Por favor, rellene este campo&lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class="form-group"&gt;
+                            &lt;label for="passwd"&gt;Contraseña&lt;/label&gt;
+                            &lt;input type="password" class="form-control" id="passwd" placeholder="Contraseña" required&gt;
+                            &lt;div class="valid-feedback"&gt;Valido&lt;/div&gt;
+                            &lt;div class="invalid-feedback"&gt;Por favor, rellene este campo&lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class="form-group form-check"&gt;
+                            &lt;label class="form-check-label"&gt;
+                                &lt;input type="checkbox" class="form-check-input" required&gt;Acepto politicas de privacidad
+                                &lt;div class="invalid-feedback"&gt;Marca esta casilla para continuar&lt;/div&gt;
+                            &lt;/label&gt;
+                        &lt;/div&gt;
+                        &lt;button class="btn btn-primary" type="submit"&gt;Entrar&lt;/button&gt;
+                    &lt;/form&gt;
+                    </pre>
+                </p>
+            </div>
+        </div>
+    </div>     
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+</html>
